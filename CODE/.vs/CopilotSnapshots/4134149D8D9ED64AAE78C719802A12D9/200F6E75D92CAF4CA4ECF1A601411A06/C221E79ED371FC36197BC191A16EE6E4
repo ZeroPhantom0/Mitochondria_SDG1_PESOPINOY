@@ -1,0 +1,177 @@
+﻿using System;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
+using System.Globalization;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using PesoPinoy.DAL.Data;
+
+namespace PesoPinoy.UI.Forms
+{
+    public partial class frmAmortizationSchedule : Form
+    {
+        private readonly int _loanId;
+        private DataGridView dgvSchedule;
+        private Label lblLoanInfo;
+        private readonly IServiceProvider _serviceProvider;
+
+        public frmAmortizationSchedule(int loanId)
+        {
+            InitializeComponent();
+            _loanId = loanId;
+            _serviceProvider = Program.ServiceProvider!;
+            this.BackColor = Color.White;
+            this.Text = "Amortization Schedule";
+            this.Size = new Size(900, 600);
+            this.StartPosition = FormStartPosition.CenterParent;
+
+            CreateHeader();
+            CreateScheduleGrid();
+            this.Load += (s, e) => LoadSchedule();
+        }
+
+        private void CreateHeader()
+        {
+            Panel headerPanel = new Panel
+            {
+                Height = 50,
+                Dock = DockStyle.Top,
+                BackColor = Color.FromArgb(2, 58, 128)
+            };
+
+            Label lblTitle = new Label
+            {
+                Text = "Amortization Schedule",
+                Font = new Font("Segoe UI", 14, FontStyle.Bold),
+                ForeColor = Color.White,
+                Location = new Point(20, 10),
+                AutoSize = true
+            };
+
+            Button btnClose = new Button
+            {
+                Text = "X",
+                Size = new Size(30, 30),
+                Location = new Point(this.Width - 40, 10),
+                FlatStyle = FlatStyle.Flat,
+                BackColor = Color.FromArgb(2, 58, 128),
+                ForeColor = Color.White,
+                Font = new Font("Segoe UI", 10, FontStyle.Bold)
+            };
+            btnClose.FlatAppearance.BorderSize = 0;
+            btnClose.Click += (s, e) => this.Close();
+
+            headerPanel.Controls.Add(lblTitle);
+            headerPanel.Controls.Add(btnClose);
+            this.Controls.Add(headerPanel);
+
+            lblLoanInfo = new Label
+            {
+                Location = new Point(20, 60),
+                Size = new Size(860, 30),
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                ForeColor = Color.FromArgb(2, 58, 128)
+            };
+            this.Controls.Add(lblLoanInfo);
+        }
+
+        private void CreateScheduleGrid()
+        {
+            dgvSchedule = new DataGridView
+            {
+                Location = new Point(20, 100),
+                Size = new Size(850, 450),
+                BackgroundColor = Color.White,
+                BorderStyle = BorderStyle.FixedSingle,
+                RowHeadersVisible = false,
+                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
+                ReadOnly = true,
+                AllowUserToAddRows = false
+            };
+
+            dgvSchedule.Columns.Add("PaymentNo", "Payment #");
+            dgvSchedule.Columns.Add("DueDate", "Due Date");
+            dgvSchedule.Columns.Add("BeginningBalance", "Beginning Balance");
+            dgvSchedule.Columns.Add("PaymentAmount", "Payment");
+            dgvSchedule.Columns.Add("Principal", "Principal");
+            dgvSchedule.Columns.Add("Interest", "Interest");
+            dgvSchedule.Columns.Add("EndingBalance", "Ending Balance");
+            dgvSchedule.Columns.Add("Status", "Status");
+
+            for (int i = 2; i <= 6; i++)
+            {
+                dgvSchedule.Columns[i].DefaultCellStyle.Format = "C2";
+                dgvSchedule.Columns[i].DefaultCellStyle.FormatProvider = new CultureInfo("en-PH");
+                dgvSchedule.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            }
+
+            this.Controls.Add(dgvSchedule);
+        }
+
+        private async void LoadSchedule()
+        {
+            try
+            {
+                using (var scope = _serviceProvider.CreateScope())
+                {
+                    var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+
+                    var loan = await context.Loans
+                        .Include(l => l.Borrower)
+                        .Include(l => l.AmortizationSchedules)
+                        .FirstOrDefaultAsync(l => l.LoanId == _loanId);
+
+                    if (loan != null)
+                    {
+                        // Update UI on main thread
+                        this.Invoke(new Action(() =>
+                        {
+                            lblLoanInfo.Text = $"Loan #{loan.LoanNumber} - {loan.Borrower?.LastName}, {loan.Borrower?.FirstName} - Principal: {loan.PrincipalAmount:C2} @ {loan.InterestRate}% for {loan.TermInMonths} months";
+
+                            dgvSchedule.Rows.Clear();
+                            if (loan.AmortizationSchedules != null && loan.AmortizationSchedules.Any())
+                            {
+                                foreach (var schedule in loan.AmortizationSchedules.OrderBy(s => s.PaymentNumber))
+                                {
+                                    dgvSchedule.Rows.Add(
+                                        schedule.PaymentNumber,
+                                        schedule.DueDate.ToShortDateString(),
+                                        schedule.BeginningBalance.ToString("C2"),
+                                        schedule.PaymentAmount.ToString("C2"),
+                                        schedule.PrincipalAmount.ToString("C2"),
+                                        schedule.InterestAmount.ToString("C2"),
+                                        schedule.EndingBalance.ToString("C2"),
+                                        schedule.Status.ToString()
+                                    );
+                                }
+                            }
+                            else
+                            {
+                                dgvSchedule.Rows.Add("No amortization schedule found for this loan.");
+                            }
+                        }));
+                    }
+                    else
+                    {
+                        this.Invoke(new Action(() =>
+                        {
+                            MessageBox.Show("Loan not found.", "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            this.Close();
+                        }));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                this.Invoke(new Action(() =>
+                {
+                    MessageBox.Show($"Error loading schedule: {ex.Message}", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }));
+            }
+        }
+
+    }
+}

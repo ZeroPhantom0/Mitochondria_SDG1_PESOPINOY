@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="PesoPinoy.BLL/PesoPinoy.BLL.csproj" Id="b95bb201-c62f-4a2f-af41-8fd9d1ebbe42" />
+  <Project Path="PesoPinoy.DAL/PesoPinoy.DAL.csproj" Id="dd9ab7bc-843e-4358-8324-7550f3a3834a" />
+  <Project Path="PesoPinoy.Models/PesoPinoy.Models.csproj" Id="b62209d1-5237-4610-8fec-4e3c124ab30e" />
+  <Project Path="PesoPinoy.UI/PesoPinoy.UI.csproj" Id="8281a0d1-177b-4abb-87cf-1d4037499028" />
+</Solution>

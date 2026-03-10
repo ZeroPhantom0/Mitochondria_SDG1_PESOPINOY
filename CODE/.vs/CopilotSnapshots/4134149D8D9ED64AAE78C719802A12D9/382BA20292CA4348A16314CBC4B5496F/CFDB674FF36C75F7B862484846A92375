@@ -1,0 +1,590 @@
+﻿using System;
+using System.Drawing;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Globalization;
+using Microsoft.Extensions.DependencyInjection;
+using PesoPinoy.BLL.Services;
+using PesoPinoy.Models.Entities;
+using PesoPinoy.Models.Enums;
+using PesoPinoy.BLL.Helpers;
+
+namespace PesoPinoy.UI.Forms
+{
+    public partial class frmPaymentScheduler : Form
+    {
+        private readonly PaymentService _paymentService;
+        private readonly LoanService _loanService;
+        private Panel headerPanel;
+        private ComboBox cmbLoan;
+        private TextBox txtAmount, txtPenalty;
+        private DateTimePicker dtpPaymentDate;
+        private Button btnRecordPayment, btnRefresh;
+        private DataGridView dgvPayments, dgvOverdue;
+        private Label lblLoanInfo, lblStatus;
+        private int selectedLoanId = 0;
+
+        public frmPaymentScheduler()
+        {
+            InitializeComponent();
+            _paymentService = Program.ServiceProvider!.GetService<PaymentService>()!;
+            _loanService = Program.ServiceProvider!.GetService<LoanService>()!;
+            this.BackColor = Color.White;
+            this.Text = "PesoPinoy - Payment Scheduler";
+            this.Size = new Size(1200, 700);
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+            CreateHeader();
+            CreatePaymentForm();
+            CreateGrids();
+            this.Load += async (s, e) => await LoadInitialDataAsync();
+        }
+
+        private async Task LoadInitialDataAsync()
+        {
+            await LoadLoansAsync();
+            await LoadPaymentsAsync();
+            await LoadOverdueAsync();
+        }
+
+        private void CreateHeader()
+        {
+            headerPanel = new Panel
+            {
+                Height = 60,
+                Dock = DockStyle.Top,
+                BackColor = Color.FromArgb(2, 58, 128)
+            };
+
+            Label lblTitle = new Label
+            {
+                Text = "Payment Scheduler",
+                Font = new Font("Segoe UI", 18, FontStyle.Bold),
+                ForeColor = Color.White,
+                Location = new Point(20, 15),
+                AutoSize = true
+            };
+
+            Label lblDate = new Label
+            {
+                Text = DateTime.Now.ToString("MMMM dd, yyyy"),
+                Font = new Font("Segoe UI", 11),
+                ForeColor = Color.FromArgb(200, 200, 200),
+                Location = new Point(this.Width - 200, 20),
+                AutoSize = true,
+                Anchor = AnchorStyles.Top | AnchorStyles.Right
+            };
+
+            Button btnClose = new Button
+            {
+                Text = "×",
+                Size = new Size(40, 40),
+                Location = new Point(this.Width - 50, 10),
+                FlatStyle = FlatStyle.Flat,
+                BackColor = Color.FromArgb(2, 58, 128),
+                ForeColor = Color.White,
+                Font = new Font("Segoe UI", 14, FontStyle.Bold),
+                Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                Cursor = Cursors.Hand
+            };
+            btnClose.FlatAppearance.BorderSize = 0;
+            btnClose.Click += (s, e) => this.Close();
+
+            headerPanel.Controls.Add(lblTitle);
+            headerPanel.Controls.Add(lblDate);
+            headerPanel.Controls.Add(btnClose);
+            this.Controls.Add(headerPanel);
+        }
+
+        private void CreatePaymentForm()
+        {
+            Panel formPanel = new Panel
+            {
+                Location = new Point(20, 80),
+                Size = new Size(600, 200),
+                BackColor = Color.FromArgb(250, 250, 250),
+                BorderStyle = BorderStyle.FixedSingle
+            };
+
+            int yPos = 20;
+            int labelWidth = 100;
+
+            // Select Loan
+            Label lblLoan = new Label
+            {
+                Text = "Select Loan:",
+                Location = new Point(20, yPos + 5),
+                Size = new Size(labelWidth, 25),
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(2, 58, 128)
+            };
+
+            cmbLoan = new ComboBox
+            {
+                Location = new Point(130, yPos),
+                Size = new Size(400, 30),
+                Font = new Font("Segoe UI", 10),
+                DropDownStyle = ComboBoxStyle.DropDownList
+            };
+            cmbLoan.SelectedIndexChanged += CmbLoan_SelectedIndexChanged;
+            yPos += 45;
+
+            // Payment Date
+            Label lblPaymentDate = new Label
+            {
+                Text = "Payment Date:",
+                Location = new Point(20, yPos + 5),
+                Size = new Size(labelWidth, 25),
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(2, 58, 128)
+            };
+
+            dtpPaymentDate = new DateTimePicker
+            {
+                Location = new Point(130, yPos),
+                Size = new Size(150, 30),
+                Font = new Font("Segoe UI", 10),
+                Format = DateTimePickerFormat.Short,
+                Value = DateTime.Now
+            };
+            dtpPaymentDate.ValueChanged += DtpPaymentDate_ValueChanged;
+            yPos += 45;
+
+            // Amount Paid
+            Label lblAmount = new Label
+            {
+                Text = "Amount Paid:",
+                Location = new Point(20, yPos + 5),
+                Size = new Size(labelWidth, 25),
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(2, 58, 128)
+            };
+
+            txtAmount = new TextBox
+            {
+                Location = new Point(130, yPos),
+                Size = new Size(150, 30),
+                Font = new Font("Segoe UI", 10),
+                BorderStyle = BorderStyle.FixedSingle
+            };
+
+            // Penalty (Read Only)
+            Label lblPenalty = new Label
+            {
+                Text = "Penalty:",
+                Location = new Point(320, yPos + 5),
+                Size = new Size(60, 25),
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(2, 58, 128)
+            };
+
+            txtPenalty = new TextBox
+            {
+                Location = new Point(380, yPos),
+                Size = new Size(80, 30),
+                Font = new Font("Segoe UI", 10),
+                BorderStyle = BorderStyle.FixedSingle,
+                ReadOnly = true,
+                BackColor = Color.FromArgb(240, 240, 240),
+                Text = "0.00"
+            };
+            yPos += 45;
+
+            // Record Payment Button
+            btnRecordPayment = new Button
+            {
+                Text = "RECORD PAYMENT",
+                Location = new Point(200, yPos),
+                Size = new Size(150, 40),
+                BackColor = Color.FromArgb(2, 58, 128),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                Cursor = Cursors.Hand
+            };
+            btnRecordPayment.FlatAppearance.BorderSize = 0;
+            btnRecordPayment.Click += async (s, e) => await RecordPaymentAsync();
+
+            // Loan Info Label
+            lblLoanInfo = new Label
+            {
+                Location = new Point(20, 250),
+                Size = new Size(560, 40),
+                Font = new Font("Segoe UI", 9),
+                ForeColor = Color.FromArgb(2, 58, 128)
+            };
+
+            formPanel.Controls.AddRange(new Control[] {
+                lblLoan, cmbLoan,
+                lblPaymentDate, dtpPaymentDate,
+                lblAmount, txtAmount, lblPenalty, txtPenalty,
+                btnRecordPayment, lblLoanInfo
+            });
+
+            this.Controls.Add(formPanel);
+        }
+
+        private void CreateGrids()
+        {
+            // Recent Payments Grid
+            Panel recentPanel = new Panel
+            {
+                Location = new Point(20, 300),
+                Size = new Size(600, 200),
+                BackColor = Color.White
+            };
+
+            Label lblRecentTitle = new Label
+            {
+                Text = "Recent Payments",
+                Font = new Font("Segoe UI", 12, FontStyle.Bold),
+                ForeColor = Color.FromArgb(2, 58, 128),
+                Location = new Point(0, 0),
+                AutoSize = true
+            };
+
+            dgvPayments = new DataGridView
+            {
+                Location = new Point(0, 30),
+                Size = new Size(600, 170),
+                BackgroundColor = Color.White,
+                BorderStyle = BorderStyle.FixedSingle,
+                RowHeadersVisible = false,
+                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
+                ReadOnly = true,
+                AllowUserToAddRows = false,
+                RowTemplate = { Height = 30 }
+            };
+
+            dgvPayments.Columns.Add("PaymentId", "ID");
+            dgvPayments.Columns.Add("PaymentNumber", "Payment #");
+            dgvPayments.Columns.Add("Loan", "Loan");
+            dgvPayments.Columns.Add("Amount", "Amount");
+            dgvPayments.Columns.Add("Date", "Date");
+            dgvPayments.Columns.Add("Status", "Status");
+
+            dgvPayments.Columns["Amount"].DefaultCellStyle.Format = "C2";
+            dgvPayments.Columns["Amount"].DefaultCellStyle.FormatProvider = new CultureInfo("en-PH");
+            dgvPayments.Columns["Amount"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+
+            dgvPayments.EnableHeadersVisualStyles = false;
+            dgvPayments.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(2, 58, 128);
+            dgvPayments.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvPayments.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+            dgvPayments.ColumnHeadersHeight = 40;
+
+            recentPanel.Controls.Add(lblRecentTitle);
+            recentPanel.Controls.Add(dgvPayments);
+
+            // Overdue Payments Grid
+            Panel overduePanel = new Panel
+            {
+                Location = new Point(640, 80),
+                Size = new Size(540, 420),
+                BackColor = Color.White
+            };
+
+            Label lblOverdueTitle = new Label
+            {
+                Text = "Overdue Payments",
+                Font = new Font("Segoe UI", 12, FontStyle.Bold),
+                ForeColor = Color.FromArgb(231, 76, 60),
+                Location = new Point(0, 0),
+                AutoSize = true
+            };
+
+            dgvOverdue = new DataGridView
+            {
+                Location = new Point(0, 30),
+                Size = new Size(540, 340),
+                BackgroundColor = Color.White,
+                BorderStyle = BorderStyle.FixedSingle,
+                RowHeadersVisible = false,
+                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
+                ReadOnly = true,
+                AllowUserToAddRows = false,
+                RowTemplate = { Height = 30 }
+            };
+
+            dgvOverdue.Columns.Add("LoanId", "Loan ID");
+            dgvOverdue.Columns.Add("Borrower", "Borrower");
+            dgvOverdue.Columns.Add("Amount", "Amount");
+            dgvOverdue.Columns.Add("DueDate", "Due Date");
+            dgvOverdue.Columns.Add("DaysLate", "Days Late");
+            dgvOverdue.Columns.Add("Penalty", "Penalty");
+            dgvOverdue.Columns.Add("Status", "Status");
+
+            dgvOverdue.Columns["Amount"].DefaultCellStyle.Format = "C2";
+            dgvOverdue.Columns["Amount"].DefaultCellStyle.FormatProvider = new CultureInfo("en-PH");
+            dgvOverdue.Columns["Penalty"].DefaultCellStyle.Format = "C2";
+            dgvOverdue.Columns["Penalty"].DefaultCellStyle.FormatProvider = new CultureInfo("en-PH");
+            dgvOverdue.Columns["Amount"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dgvOverdue.Columns["Penalty"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+
+            dgvOverdue.EnableHeadersVisualStyles = false;
+            dgvOverdue.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(231, 76, 60);
+            dgvOverdue.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvOverdue.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+            dgvOverdue.ColumnHeadersHeight = 40;
+
+            btnRefresh = new Button
+            {
+                Text = "REFRESH",
+                Size = new Size(120, 35),
+                Location = new Point(400, 380),
+                BackColor = Color.FromArgb(52, 73, 94),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 9, FontStyle.Bold),
+                Cursor = Cursors.Hand
+            };
+            btnRefresh.FlatAppearance.BorderSize = 0;
+            btnRefresh.Click += async (s, e) => await LoadInitialDataAsync();
+
+            overduePanel.Controls.Add(lblOverdueTitle);
+            overduePanel.Controls.Add(dgvOverdue);
+            overduePanel.Controls.Add(btnRefresh);
+
+            this.Controls.Add(recentPanel);
+            this.Controls.Add(overduePanel);
+
+            lblStatus = new Label
+            {
+                Location = new Point(20, 670),
+                Size = new Size(1150, 25),
+                ForeColor = Color.FromArgb(2, 58, 128),
+                Font = new Font("Segoe UI", 10)
+            };
+            this.Controls.Add(lblStatus);
+        }
+
+        private async Task LoadLoansAsync()
+        {
+            try
+            {
+                var loans = await _loanService.GetAllLoansAsync();
+                var activeLoans = loans.Where(l => l.Status == LoanStatus.Active).ToList();
+
+                if (activeLoans.Any())
+                {
+                    var ci = new CultureInfo("en-PH");
+                    cmbLoan.DisplayMember = "LoanInfo";
+                    cmbLoan.ValueMember = "LoanId";
+                    cmbLoan.DataSource = activeLoans.Select(l => new
+                    {
+                        LoanId = l.LoanId,
+                        LoanInfo = $"{l.LoanNumber} - {l.Borrower?.LastName}, {l.Borrower?.FirstName} - Balance: {l.BalanceRemaining.ToString("C2", ci)}"
+                    }).ToList();
+
+                    lblStatus.Text = $"Found {activeLoans.Count} active loan(s)";
+                }
+                else
+                {
+                    cmbLoan.DataSource = null;
+                    lblStatus.Text = "No active loans found. Please create and approve loans first.";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading loans: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void CmbLoan_SelectedIndexChanged(object? sender, EventArgs e)
+        {
+            if (cmbLoan.SelectedValue != null && cmbLoan.SelectedValue is int loanId)
+            {
+                selectedLoanId = loanId;
+                await LoadLoanDetailsAsync(loanId);
+            }
+        }
+
+        private async Task LoadLoanDetailsAsync(int loanId)
+        {
+            try
+            {
+                var loan = await _loanService.GetLoanByIdAsync(loanId);
+                if (loan != null)
+                {
+                    var nextPayment = loan.AmortizationSchedules?
+                        .FirstOrDefault(s => s.Status == PaymentStatus.Pending);
+
+                    if (nextPayment != null)
+                    {
+                        lblLoanInfo.Text = $"Loan: {loan.LoanNumber} | Balance: {loan.BalanceRemaining:C2} | " +
+                            $"Next Due: {nextPayment.DueDate:MM/dd/yyyy} | Amount Due: {nextPayment.PaymentAmount:C2}";
+
+                        // Calculate penalty if payment date is after due date
+                        UpdatePenalty();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading loan details: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void DtpPaymentDate_ValueChanged(object? sender, EventArgs e)
+        {
+            UpdatePenalty();
+        }
+
+        private async void UpdatePenalty()
+        {
+            if (selectedLoanId == 0) return;
+
+            try
+            {
+                var loan = await _loanService.GetLoanByIdAsync(selectedLoanId);
+                if (loan != null)
+                {
+                    var nextPayment = loan.AmortizationSchedules?
+                        .FirstOrDefault(s => s.Status == PaymentStatus.Pending);
+
+                    if (nextPayment != null)
+                    {
+                        if (dtpPaymentDate.Value > nextPayment.DueDate)
+                        {
+                            int daysLate = PenaltyCalculator.CalculateDaysLate(nextPayment.DueDate, dtpPaymentDate.Value);
+                            decimal penalty = PenaltyCalculator.CalculatePenalty(nextPayment.PaymentAmount, daysLate);
+                            txtPenalty.Text = penalty.ToString("N2");
+                        }
+                        else
+                        {
+                            txtPenalty.Text = "0.00";
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error updating penalty: {ex.Message}");
+            }
+        }
+
+        private async Task LoadPaymentsAsync()
+        {
+            try
+            {
+                var payments = await _paymentService.GetAllPaymentsAsync();
+                dgvPayments.Rows.Clear();
+
+                foreach (var payment in payments.Take(50))
+                {
+                    dgvPayments.Rows.Add(
+                        payment.PaymentId,
+                        payment.PaymentNumber,
+                        $"{payment.Loan?.LoanNumber}",
+                        payment.AmountPaid,
+                        payment.PaymentDate.ToShortDateString(),
+                        payment.Status.ToString()
+                    );
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading payments: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async Task LoadOverdueAsync()
+        {
+            try
+            {
+                var overdueLoans = await _loanService.GetOverdueLoansAsync();
+                dgvOverdue.Rows.Clear();
+
+                foreach (var loan in overdueLoans)
+                {
+                    var overdueSchedule = loan.AmortizationSchedules?
+                        .FirstOrDefault(s => s.Status == PaymentStatus.Pending && s.DueDate < DateTime.Now);
+
+                    if (overdueSchedule != null)
+                    {
+                        int daysLate = PenaltyCalculator.CalculateDaysLate(overdueSchedule.DueDate, DateTime.Now);
+                        decimal penalty = PenaltyCalculator.CalculatePenalty(overdueSchedule.PaymentAmount, daysLate);
+
+                        dgvOverdue.Rows.Add(
+                            loan.LoanId,
+                            $"{loan.Borrower?.LastName}, {loan.Borrower?.FirstName}",
+                            overdueSchedule.PaymentAmount,
+                            overdueSchedule.DueDate.ToShortDateString(),
+                            daysLate,
+                            penalty,
+                            PenaltyCalculator.GetPenaltyStatus(daysLate)
+                        );
+                    }
+                }
+
+                lblStatus.Text = $"Found {overdueLoans.Count()} overdue loan(s).";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading overdue payments: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async Task RecordPaymentAsync()
+        {
+            try
+            {
+                if (selectedLoanId == 0)
+                {
+                    MessageBox.Show("Please select a loan.", "Validation Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (!decimal.TryParse(txtAmount.Text, out decimal amount) || amount <= 0)
+                {
+                    MessageBox.Show("Please enter a valid payment amount.", "Validation Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                var loan = await _loanService.GetLoanByIdAsync(selectedLoanId);
+                var nextPayment = loan?.AmortizationSchedules?
+                    .FirstOrDefault(s => s.Status == PaymentStatus.Pending);
+
+                if (nextPayment == null)
+                {
+                    MessageBox.Show("No pending payments found for this loan.", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var payment = new Payment
+                {
+                    LoanId = selectedLoanId,
+                    PaymentDate = dtpPaymentDate.Value,
+                    DueDate = nextPayment.DueDate,
+                    AmountDue = nextPayment.PaymentAmount,
+                    AmountPaid = amount,
+                    LatePenalty = decimal.Parse(txtPenalty.Text),
+                    PaymentMethod = "Cash",
+                    Remarks = "Regular payment"
+                };
+
+                await _paymentService.RecordPaymentAsync(payment);
+
+                MessageBox.Show($"Payment recorded successfully!\nAmount: {amount:C2}\nPenalty: {txtPenalty.Text:C2}",
+                    "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                txtAmount.Clear();
+                txtPenalty.Text = "0.00";
+                await LoadInitialDataAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error recording payment: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+    }
+}

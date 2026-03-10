@@ -1,0 +1,630 @@
+﻿using System;
+using System.Drawing;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Globalization;
+using Microsoft.Extensions.DependencyInjection;
+using PesoPinoy.BLL.Services;
+using PesoPinoy.Models.Entities;
+using PesoPinoy.Models.Enums;
+using PesoPinoy.BLL.Helpers;
+
+namespace PesoPinoy.UI.Forms
+{
+    public partial class frmLoanManagement : Form
+    {
+        private readonly LoanService _loanService;
+        private readonly BorrowerService _borrowerService;
+        private Panel headerPanel;
+        private ComboBox cmbBorrower;
+        private TextBox txtPrincipal, txtTerm, txtInterestRate, txtMonthlyPayment, txtTotalInterest;
+        private DateTimePicker dtpFirstPayment;
+        private Button btnCalculate, btnApply, btnApprove, btnViewSchedule, btnRefresh;
+        private DataGridView dgvLoans;
+        private Label lblStatus;
+        private decimal calculatedMonthlyPayment = 0;
+        private int selectedLoanId = 0;
+
+        public frmLoanManagement()
+        {
+            InitializeComponent();
+            _loanService = Program.ServiceProvider!.GetService<LoanService>()!;
+            _borrowerService = Program.ServiceProvider!.GetService<BorrowerService>()!;
+            this.BackColor = Color.White;
+            this.Text = "PesoPinoy - Loan Management";
+            this.Size = new Size(1200, 700);
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+            CreateHeader();
+            CreateLoanForm();
+            CreateLoansGrid();
+            this.Load += async (s, e) => await LoadInitialDataAsync();
+        }
+
+        private async Task LoadInitialDataAsync()
+        {
+            await LoadBorrowersAsync();
+            await LoadLoansAsync();
+        }
+
+        private void CreateHeader()
+        {
+            headerPanel = new Panel
+            {
+                Height = 60,
+                Dock = DockStyle.Top,
+                BackColor = Color.FromArgb(2, 58, 128)
+            };
+
+            Label lblTitle = new Label
+            {
+                Text = "Loan Management",
+                Font = new Font("Segoe UI", 18, FontStyle.Bold),
+                ForeColor = Color.White,
+                Location = new Point(20, 15),
+                AutoSize = true
+            };
+
+            Label lblDate = new Label
+            {
+                Text = DateTime.Now.ToString("MMMM dd, yyyy"),
+                Font = new Font("Segoe UI", 11),
+                ForeColor = Color.FromArgb(200, 200, 200),
+                Location = new Point(this.Width - 200, 20),
+                AutoSize = true,
+                Anchor = AnchorStyles.Top | AnchorStyles.Right
+            };
+
+            Button btnClose = new Button
+            {
+                Text = "×",
+                Size = new Size(40, 40),
+                Location = new Point(this.Width - 50, 10),
+                FlatStyle = FlatStyle.Flat,
+                BackColor = Color.FromArgb(2, 58, 128),
+                ForeColor = Color.White,
+                Font = new Font("Segoe UI", 14, FontStyle.Bold),
+                Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                Cursor = Cursors.Hand
+            };
+            btnClose.FlatAppearance.BorderSize = 0;
+            btnClose.Click += (s, e) => this.Close();
+
+            headerPanel.Controls.Add(lblTitle);
+            headerPanel.Controls.Add(lblDate);
+            headerPanel.Controls.Add(btnClose);
+            this.Controls.Add(headerPanel);
+        }
+
+        private void CreateLoanForm()
+        {
+            Panel formPanel = new Panel
+            {
+                Location = new Point(20, 80),
+                Size = new Size(800, 280),
+                BackColor = Color.FromArgb(250, 250, 250),
+                BorderStyle = BorderStyle.FixedSingle
+            };
+
+            int yPos = 20;
+            int labelWidth = 120;
+            int fieldWidth = 150;
+
+            // Select Borrower
+            Label lblBorrower = new Label
+            {
+                Text = "Select Borrower:",
+                Location = new Point(20, yPos + 5),
+                Size = new Size(labelWidth, 25),
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(2, 58, 128)
+            };
+
+            cmbBorrower = new ComboBox
+            {
+                Location = new Point(150, yPos),
+                Size = new Size(250, 30),
+                Font = new Font("Segoe UI", 10),
+                DropDownStyle = ComboBoxStyle.DropDownList
+            };
+            yPos += 40;
+
+            // Principal Amount
+            Label lblPrincipal = new Label
+            {
+                Text = "Principal Amount:",
+                Location = new Point(20, yPos + 5),
+                Size = new Size(labelWidth, 25),
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(2, 58, 128)
+            };
+
+            txtPrincipal = new TextBox
+            {
+                Location = new Point(150, yPos),
+                Size = new Size(fieldWidth, 30),
+                Font = new Font("Segoe UI", 10),
+                BorderStyle = BorderStyle.FixedSingle
+            };
+
+            // Term
+            Label lblTerm = new Label
+            {
+                Text = "Term (months):",
+                Location = new Point(350, yPos + 5),
+                Size = new Size(100, 25),
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(2, 58, 128)
+            };
+
+            txtTerm = new TextBox
+            {
+                Location = new Point(460, yPos),
+                Size = new Size(80, 30),
+                Font = new Font("Segoe UI", 10),
+                BorderStyle = BorderStyle.FixedSingle
+            };
+            yPos += 40;
+
+            // Interest Rate (Read Only)
+            Label lblInterest = new Label
+            {
+                Text = "Interest Rate (%):",
+                Location = new Point(20, yPos + 5),
+                Size = new Size(labelWidth, 25),
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(2, 58, 128)
+            };
+
+            txtInterestRate = new TextBox
+            {
+                Location = new Point(150, yPos),
+                Size = new Size(80, 30),
+                Font = new Font("Segoe UI", 10),
+                BorderStyle = BorderStyle.FixedSingle,
+                ReadOnly = true,
+                BackColor = Color.FromArgb(240, 240, 240)
+            };
+
+            // First Payment Date
+            Label lblFirstPayment = new Label
+            {
+                Text = "First Payment:",
+                Location = new Point(350, yPos + 5),
+                Size = new Size(100, 25),
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(2, 58, 128)
+            };
+
+            dtpFirstPayment = new DateTimePicker
+            {
+                Location = new Point(460, yPos),
+                Size = new Size(150, 30),
+                Font = new Font("Segoe UI", 10),
+                Format = DateTimePickerFormat.Short,
+                Value = DateTime.Now.AddMonths(1)
+            };
+            yPos += 40;
+
+            // Calculate Button
+            btnCalculate = new Button
+            {
+                Text = "CALCULATE",
+                Location = new Point(150, yPos),
+                Size = new Size(120, 35),
+                BackColor = Color.FromArgb(52, 152, 219),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                Cursor = Cursors.Hand
+            };
+            btnCalculate.FlatAppearance.BorderSize = 0;
+            btnCalculate.Click += CalculateLoan;
+            yPos += 45;
+
+            // Monthly Payment
+            Label lblMonthly = new Label
+            {
+                Text = "Monthly Payment:",
+                Location = new Point(20, yPos + 5),
+                Size = new Size(labelWidth, 25),
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                ForeColor = Color.FromArgb(2, 58, 128)
+            };
+
+            txtMonthlyPayment = new TextBox
+            {
+                Location = new Point(150, yPos),
+                Size = new Size(150, 30),
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                BorderStyle = BorderStyle.FixedSingle,
+                ReadOnly = true,
+                BackColor = Color.FromArgb(240, 240, 240)
+            };
+
+            // Total Interest
+            Label lblTotalInterest = new Label
+            {
+                Text = "Total Interest:",
+                Location = new Point(350, yPos + 5),
+                Size = new Size(100, 25),
+                Font = new Font("Segoe UI", 10),
+                ForeColor = Color.FromArgb(2, 58, 128)
+            };
+
+            txtTotalInterest = new TextBox
+            {
+                Location = new Point(460, yPos),
+                Size = new Size(150, 30),
+                Font = new Font("Segoe UI", 10),
+                BorderStyle = BorderStyle.FixedSingle,
+                ReadOnly = true,
+                BackColor = Color.FromArgb(240, 240, 240)
+            };
+            yPos += 45;
+
+            // Action Buttons
+            btnApply = new Button
+            {
+                Text = "APPLY FOR LOAN",
+                Location = new Point(150, yPos),
+                Size = new Size(150, 40),
+                BackColor = Color.FromArgb(2, 58, 128),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                Cursor = Cursors.Hand
+            };
+            btnApply.FlatAppearance.BorderSize = 0;
+            btnApply.Click += async (s, e) => await ApplyForLoanAsync();
+
+            btnApprove = new Button
+            {
+                Text = "APPROVE LOAN",
+                Location = new Point(320, yPos),
+                Size = new Size(130, 40),
+                BackColor = Color.FromArgb(46, 204, 113),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                Cursor = Cursors.Hand
+            };
+            btnApprove.FlatAppearance.BorderSize = 0;
+            btnApprove.Click += async (s, e) => await ApproveLoanAsync();
+
+            btnViewSchedule = new Button
+            {
+                Text = "VIEW SCHEDULE",
+                Location = new Point(470, yPos),
+                Size = new Size(140, 40),
+                BackColor = Color.FromArgb(155, 89, 182),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                Cursor = Cursors.Hand
+            };
+            btnViewSchedule.FlatAppearance.BorderSize = 0;
+            btnViewSchedule.Click += ViewAmortizationSchedule;
+
+            btnRefresh = new Button
+            {
+                Text = "REFRESH",
+                Location = new Point(630, yPos),
+                Size = new Size(100, 40),
+                BackColor = Color.FromArgb(52, 73, 94),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                Cursor = Cursors.Hand
+            };
+            btnRefresh.FlatAppearance.BorderSize = 0;
+            btnRefresh.Click += async (s, e) => await LoadLoansAsync();
+
+            formPanel.Controls.AddRange(new Control[] {
+                lblBorrower, cmbBorrower,
+                lblPrincipal, txtPrincipal, lblTerm, txtTerm,
+                lblInterest, txtInterestRate, lblFirstPayment, dtpFirstPayment,
+                btnCalculate,
+                lblMonthly, txtMonthlyPayment, lblTotalInterest, txtTotalInterest,
+                btnApply, btnApprove, btnViewSchedule, btnRefresh
+            });
+
+            this.Controls.Add(formPanel);
+        }
+
+        private void CreateLoansGrid()
+        {
+            Panel gridPanel = new Panel
+            {
+                Location = new Point(20, 380),
+                Size = new Size(1150, 280),
+                BackColor = Color.White
+            };
+
+            dgvLoans = new DataGridView
+            {
+                Dock = DockStyle.Fill,
+                BackgroundColor = Color.White,
+                BorderStyle = BorderStyle.FixedSingle,
+                RowHeadersVisible = false,
+                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
+                SelectionMode = DataGridViewSelectionMode.FullRowSelect,
+                ReadOnly = true,
+                AllowUserToAddRows = false,
+                RowTemplate = { Height = 35 }
+            };
+
+            dgvLoans.Columns.Add("LoanId", "ID");
+            dgvLoans.Columns.Add("LoanNumber", "Loan #");
+            dgvLoans.Columns.Add("Borrower", "Borrower");
+            dgvLoans.Columns.Add("Principal", "Principal");
+            dgvLoans.Columns.Add("Interest", "Rate");
+            dgvLoans.Columns.Add("Monthly", "Monthly");
+            dgvLoans.Columns.Add("Balance", "Balance");
+            dgvLoans.Columns.Add("Status", "Status");
+
+            dgvLoans.Columns["Principal"].DefaultCellStyle.Format = "C2";
+            dgvLoans.Columns["Monthly"].DefaultCellStyle.Format = "C2";
+            dgvLoans.Columns["Balance"].DefaultCellStyle.Format = "C2";
+            // Use Philippine peso formatting
+            dgvLoans.Columns["Principal"].DefaultCellStyle.FormatProvider = new CultureInfo("en-PH");
+            dgvLoans.Columns["Monthly"].DefaultCellStyle.FormatProvider = new CultureInfo("en-PH");
+            dgvLoans.Columns["Balance"].DefaultCellStyle.FormatProvider = new CultureInfo("en-PH");
+            dgvLoans.Columns["Principal"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dgvLoans.Columns["Monthly"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dgvLoans.Columns["Balance"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+
+            dgvLoans.EnableHeadersVisualStyles = false;
+            dgvLoans.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(2, 58, 128);
+            dgvLoans.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvLoans.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            dgvLoans.ColumnHeadersHeight = 45;
+
+            dgvLoans.CellClick += (s, e) =>
+            {
+                if (e.RowIndex >= 0 && dgvLoans.Rows[e.RowIndex].Cells["LoanId"].Value != null)
+                {
+                    selectedLoanId = Convert.ToInt32(dgvLoans.Rows[e.RowIndex].Cells["LoanId"].Value);
+                }
+            };
+
+            gridPanel.Controls.Add(dgvLoans);
+            this.Controls.Add(gridPanel);
+
+            lblStatus = new Label
+            {
+                Location = new Point(20, 670),
+                Size = new Size(1150, 25),
+                ForeColor = Color.FromArgb(2, 58, 128),
+                Font = new Font("Segoe UI", 10)
+            };
+            this.Controls.Add(lblStatus);
+        }
+
+        private async Task LoadBorrowersAsync()
+        {
+            try
+            {
+                var borrowers = await _borrowerService.GetAllBorrowersAsync();
+                var activeBorrowers = borrowers.Where(b => b.IsActive).ToList();
+
+                cmbBorrower.DisplayMember = "FullName";
+                cmbBorrower.ValueMember = "BorrowerId";
+                cmbBorrower.DataSource = activeBorrowers.Select(b => new
+                {
+                    BorrowerId = b.BorrowerId,
+                    FullName = $"{b.LastName}, {b.FirstName}"
+                }).ToList();
+
+                if (!activeBorrowers.Any())
+                {
+                    lblStatus.Text = "No active borrowers found. Please add borrowers first.";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading borrowers: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async Task LoadLoansAsync()
+        {
+            try
+            {
+                var loans = await _loanService.GetAllLoansAsync();
+                dgvLoans.Rows.Clear();
+
+                foreach (var loan in loans)
+                {
+                    dgvLoans.Rows.Add(
+                        loan.LoanId,
+                        loan.LoanNumber,
+                        $"{loan.Borrower?.LastName}, {loan.Borrower?.FirstName}",
+                        loan.PrincipalAmount,
+                        $"{loan.InterestRate:F2}%",
+                        loan.MonthlyPayment,
+                        loan.BalanceRemaining,
+                        loan.Status.ToString()
+                    );
+                }
+
+                int activeCount = loans.Count(l => l.Status == LoanStatus.Active);
+                int pendingCount = loans.Count(l => l.Status == LoanStatus.Pending);
+
+                lblStatus.Text = $"Total Loans: {loans.Count()} | Active: {activeCount} | Pending: {pendingCount}";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading loans: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void CalculateLoan(object? sender, EventArgs e)
+        {
+            try
+            {
+                if (!ValidateLoanInput()) return;
+
+                decimal principal = decimal.Parse(txtPrincipal.Text);
+                int term = int.Parse(txtTerm.Text);
+
+                if (cmbBorrower.SelectedValue != null)
+                {
+                    int borrowerId = (int)cmbBorrower.SelectedValue;
+                    var borrower = await _borrowerService.GetBorrowerByIdAsync(borrowerId);
+
+                    // Calculate interest based on risk score
+                    decimal interestRate = CalculateInterestRate(borrower?.RiskScore ?? 50);
+                    txtInterestRate.Text = interestRate.ToString("F2");
+
+                    // Calculate monthly payment
+                    var calculator = new LoanCalculator();
+                    var result = calculator.CalculateLoan(principal, interestRate, term);
+
+                    txtMonthlyPayment.Text = result.MonthlyPayment.ToString("N2");
+                    txtTotalInterest.Text = result.TotalInterest.ToString("N2");
+                    calculatedMonthlyPayment = result.MonthlyPayment;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error calculating loan: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private decimal CalculateInterestRate(decimal riskScore)
+        {
+            if (riskScore <= 30) return 5.0m;
+            if (riskScore <= 50) return 7.0m;
+            if (riskScore <= 70) return 10.0m;
+            return 15.0m;
+        }
+
+        private async Task ApplyForLoanAsync()
+        {
+            try
+            {
+                if (!ValidateLoanInput()) return;
+
+                var loan = new Loan
+                {
+                    BorrowerId = (int)cmbBorrower.SelectedValue!,
+                    PrincipalAmount = decimal.Parse(txtPrincipal.Text),
+                    InterestRate = decimal.Parse(txtInterestRate.Text),
+                    TermInMonths = int.Parse(txtTerm.Text),
+                    FirstPaymentDate = dtpFirstPayment.Value,
+                    MonthlyPayment = calculatedMonthlyPayment,
+                    Status = LoanStatus.Pending,
+                    ApplicationDate = DateTime.Now,
+                    LoanNumber = GenerateLoanNumber(),
+                    BalanceRemaining = decimal.Parse(txtPrincipal.Text)
+                };
+
+                await _loanService.ApplyForLoanAsync(loan);
+
+                MessageBox.Show("Loan application submitted successfully!", "Success",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                ClearForm();
+                await LoadLoansAsync();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error applying for loan: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async Task ApproveLoanAsync()
+        {
+            try
+            {
+                if (selectedLoanId == 0)
+                {
+                    MessageBox.Show("Please select a loan to approve.", "Information",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                var result = MessageBox.Show("Approve this loan?", "Confirm Approval",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    await _loanService.ApproveLoanAsync(selectedLoanId);
+
+                    MessageBox.Show("Loan approved successfully!", "Success",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    await LoadLoansAsync();
+                    selectedLoanId = 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error approving loan: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ViewAmortizationSchedule(object? sender, EventArgs e)
+        {
+            if (selectedLoanId == 0)
+            {
+                MessageBox.Show("Please select a loan first.", "Information",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            var scheduleForm = new frmAmortizationSchedule(selectedLoanId);
+            scheduleForm.ShowDialog();
+        }
+
+        private string GenerateLoanNumber()
+        {
+            return $"LN-{DateTime.Now:yyyyMMdd}-{Guid.NewGuid().ToString().Substring(0, 8).ToUpper()}";
+        }
+
+        private bool ValidateLoanInput()
+        {
+            if (cmbBorrower.SelectedValue == null)
+            {
+                MessageBox.Show("Please select a borrower.", "Validation Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtPrincipal.Text) || !decimal.TryParse(txtPrincipal.Text, out decimal principal) || principal <= 0)
+            {
+                MessageBox.Show("Please enter a valid principal amount.", "Validation Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtTerm.Text) || !int.TryParse(txtTerm.Text, out int term) || term <= 0 || term > 60)
+            {
+                MessageBox.Show("Please enter a valid term (1-60 months).", "Validation Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            return true;
+        }
+
+        private void ClearForm()
+        {
+            cmbBorrower.SelectedIndex = -1;
+            txtPrincipal.Clear();
+            txtTerm.Clear();
+            txtInterestRate.Clear();
+            txtMonthlyPayment.Clear();
+            txtTotalInterest.Clear();
+            dtpFirstPayment.Value = DateTime.Now.AddMonths(1);
+            selectedLoanId = 0;
+        }
+    }
+}

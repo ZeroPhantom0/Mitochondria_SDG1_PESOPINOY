@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Controls\ucDashboardCards.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\ucLoanCalculator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmAmortizationSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmBackupRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmBorrowerManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmInsuranceManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmLoanManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmMainDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmPaymentScheduler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\frmSavingsManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

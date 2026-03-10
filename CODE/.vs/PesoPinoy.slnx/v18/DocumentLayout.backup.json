@@ -1,0 +1,1801 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\repositories\\loanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\repositories\\loanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\validators\\loanvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\validators\\loanvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\enums\\employmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\enums\\employmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\enums\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\enums\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmborrowermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmborrowermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmamortizationschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmamortizationschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frminsurancemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frminsurancemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmloanmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmloanmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmsavingsmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmsavingsmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmpaymentscheduler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmpaymentscheduler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmbackuprestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmbackuprestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\pesopinoy.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\pesopinoy.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\services\\insuranceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\services\\insuranceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\helpers\\formanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\helpers\\formanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\helpers\\uihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\helpers\\uihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmborrowermanagement.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmborrowermanagement.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\entities\\insuranceclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\entities\\insuranceclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\entities\\insurancepolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\entities\\insurancepolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\entities\\insurancepayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\entities\\insurancepayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\enums\\insurancepolicystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\enums\\insurancepolicystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\enums\\claimstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\enums\\claimstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\enums\\insurancetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\enums\\insurancetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\services\\loanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\services\\loanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmmaindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmmaindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\pesopinoy.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\pesopinoy.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\pesopinoy.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\pesopinoy.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\pesopinoy.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\pesopinoy.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\migrations\\20260305143542_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\migrations\\20260305143542_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\appsettings.json||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\appsettings.json||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\controls\\ucloancalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\controls\\ucloancalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\controls\\ucdashboardcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\controls\\ucdashboardcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\controls\\ucdashboardcards.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\controls\\ucdashboardcards.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\services\\backupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\services\\backupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\data\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\data\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\enums\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\enums\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\enums\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\enums\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\enums\\loanstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\enums\\loanstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\enums\\riskclassification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\enums\\riskclassification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\repositories\\insurancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\repositories\\insurancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\repositories\\iinsurancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\repositories\\iinsurancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\repositories\\savingsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\repositories\\savingsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\repositories\\isavingsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\repositories\\isavingsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\repositories\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\repositories\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\repositories\\iloanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\repositories\\iloanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\interfaces\\iriskanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\interfaces\\iriskanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\interfaces\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\interfaces\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\interfaces\\iloanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\interfaces\\iloanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\helpers\\thememanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\helpers\\thememanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\controls\\ucloancalculator.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\controls\\ucloancalculator.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmbackuprestore.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmbackuprestore.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmreports.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmreports.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmpaymentscheduler.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmpaymentscheduler.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frminsurancemanagement.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frminsurancemanagement.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmsavingsmanagement.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmsavingsmanagement.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmamortizationschedule.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmamortizationschedule.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmloanmanagement.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmloanmanagement.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\dtos\\riskanalysisdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\dtos\\riskanalysisdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\dtos\\dashboardsummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\dtos\\dashboardsummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\dtos\\paymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\dtos\\paymentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\dtos\\loanapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\dtos\\loanapplicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\entities\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\entities\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\entities\\amortizationschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\entities\\amortizationschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\entities\\savingstransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\entities\\savingstransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\repositories\\borrowerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\repositories\\borrowerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\repositories\\iborrowerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\repositories\\iborrowerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\validators\\borrowervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\validators\\borrowervalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\helpers\\penaltycalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\helpers\\penaltycalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\helpers\\loancalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\helpers\\loancalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\services\\riskanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\services\\riskanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\services\\savingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\services\\savingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\services\\borrowerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\services\\borrowerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.ui\\forms\\frmmaindashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmmaindashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\helpers\\riskscorecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\helpers\\riskscorecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\repositories\\base\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\repositories\\base\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\repositories\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\repositories\\base\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\entities\\savingsaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\entities\\savingsaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\entities\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\entities\\loan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\entities\\borrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\entities\\borrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\pesopinoy.ui\\controls\\ucloancalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\controls\\ucloancalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\pesopinoy.ui\\controls\\ucdashboardcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\controls\\ucdashboardcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\pesopinoy.ui\\forms\\frmbackuprestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmbackuprestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\pesopinoy.ui\\forms\\frmreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\pesopinoy.ui\\forms\\frmpaymentscheduler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmpaymentscheduler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\pesopinoy.ui\\forms\\frminsurancemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frminsurancemanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\pesopinoy.ui\\forms\\frmsavingsmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmsavingsmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\pesopinoy.ui\\forms\\frmamortizationschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmamortizationschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\pesopinoy.ui\\forms\\frmloanmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmloanmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\pesopinoy.ui\\forms\\frmborrowermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmborrowermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\pesopinoy.ui\\forms\\frmmaindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmmaindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\pesopinoy.ui\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\forms\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.models\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B62209D1-5237-4610-8FEC-4E3C124AB30E}|PesoPinoy.Models\\PesoPinoy.Models.csproj|solutionrelative:pesopinoy.models\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B95BB201-C62F-4A2F-AF41-8FD9D1EBBE42}|PesoPinoy.BLL\\PesoPinoy.BLL.csproj|solutionrelative:pesopinoy.bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\pesopinoy.ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8281A0D1-177B-4ABB-87CF-1D4037499028}|PesoPinoy.UI\\PesoPinoy.UI.csproj|solutionrelative:pesopinoy.ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\migrations\\20260308172847_addinsurancepaymentandstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\migrations\\20260308172847_addinsurancepaymentandstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|c:\\users\\user\\source\\repos\\mitochondria_sdg1_pesopinoy\\code\\pesopinoy.dal\\migrations\\20260308170027_addpolicystatusenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD9AB7BC-843E-4358-8324-7550F3A3834A}|PesoPinoy.DAL\\PesoPinoy.DAL.csproj|solutionrelative:pesopinoy.dal\\migrations\\20260308170027_addpolicystatusenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmLogin.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmLogin.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmLogin.cs",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAmwBgBAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:44:59.52Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\appsettings.json",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\appsettings.json",
+              "RelativeToolTip": "PesoPinoy.UI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-10T05:38:14.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmSavingsManagement.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmSavingsManagement.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmSavingsManagement.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmSavingsManagement.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmSavingsManagement.cs",
+              "ViewState": "AgIAAJABAAAAAAAAAAAswAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:56:17.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmploymentStatus.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\EmploymentStatus.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Enums\\EmploymentStatus.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\EmploymentStatus.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Enums\\EmploymentStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:41:21.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAmwFQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:36:30.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\LoanRepository.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Repositories\\LoanRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\LoanRepository.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Repositories\\LoanRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:38:26.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmBorrowerManagement.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmBorrowerManagement.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmBorrowerManagement.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmBorrowerManagement.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmBorrowerManagement.cs",
+              "ViewState": "AgIAAOkAAAAAAAAAAAAswPcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:47:29.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmAmortizationSchedule.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmAmortizationSchedule.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmAmortizationSchedule.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmAmortizationSchedule.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmAmortizationSchedule.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAUwI4AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:48:36.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmInsuranceManagement.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmInsuranceManagement.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmInsuranceManagement.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmInsuranceManagement.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmInsuranceManagement.cs",
+              "ViewState": "AgIAACsGAAAAAAAAAAAcwDsGAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:57:05.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmLoanManagement.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmLoanManagement.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmLoanManagement.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmLoanManagement.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmLoanManagement.cs",
+              "ViewState": "AgIAANoBAAAAAAAAAAAWwOoBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:48:11.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frmPaymentScheduler.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmPaymentScheduler.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmPaymentScheduler.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmPaymentScheduler.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmPaymentScheduler.cs",
+              "ViewState": "AgIAADQCAAAAAAAAAAAswEcCAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:57:36.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frmBackupRestore.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmBackupRestore.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmBackupRestore.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmBackupRestore.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmBackupRestore.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAswJEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:49:10.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PesoPinoy.UI.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\PesoPinoy.UI.csproj",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\PesoPinoy.UI.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\PesoPinoy.UI.csproj",
+              "RelativeToolTip": "PesoPinoy.UI\\PesoPinoy.UI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-05T00:15:07.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frmLogin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmLogin.Designer.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmLogin.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmLogin.Designer.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmLogin.Designer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:46:41.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Services\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\PaymentService.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Services\\PaymentService.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAMwIkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:34:16.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FormAnimator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Helpers\\FormAnimator.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Helpers\\FormAnimator.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Helpers\\FormAnimator.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Helpers\\FormAnimator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:33:08.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "InsuranceService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\InsuranceService.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Services\\InsuranceService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\InsuranceService.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Services\\InsuranceService.cs",
+              "ViewState": "AgIAAG8BAAAAAAAAAAAewHwBAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:34:32.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UIHelper.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Helpers\\UIHelper.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Helpers\\UIHelper.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Helpers\\UIHelper.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Helpers\\UIHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T14:59:24.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "frmBorrowerManagement.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmBorrowerManagement.Designer.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmBorrowerManagement.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmBorrowerManagement.Designer.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmBorrowerManagement.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:47:53.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "InsuranceClaim.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\InsuranceClaim.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Entities\\InsuranceClaim.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\InsuranceClaim.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Entities\\InsuranceClaim.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:40:40.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "InsurancePayment.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\InsurancePayment.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Entities\\InsurancePayment.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\InsurancePayment.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Entities\\InsurancePayment.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAiwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T16:25:31.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 109,
+              "Title": "20260308172847_AddInsurancePaymentAndStatus.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Migrations\\20260308172847_AddInsurancePaymentAndStatus.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Migrations\\20260308172847_AddInsurancePaymentAndStatus.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Migrations\\20260308172847_AddInsurancePaymentAndStatus.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Migrations\\20260308172847_AddInsurancePaymentAndStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T17:28:47.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "InsurancePolicy.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\InsurancePolicy.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Entities\\InsurancePolicy.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\InsurancePolicy.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Entities\\InsurancePolicy.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAwwD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:40:32.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 110,
+              "Title": "20260308170027_AddPolicyStatusEnum.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Migrations\\20260308170027_AddPolicyStatusEnum.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Migrations\\20260308170027_AddPolicyStatusEnum.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Migrations\\20260308170027_AddPolicyStatusEnum.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Migrations\\20260308170027_AddPolicyStatusEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T17:00:27.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "InsurancePolicyStatus.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\InsurancePolicyStatus.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Enums\\InsurancePolicyStatus.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\InsurancePolicyStatus.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Enums\\InsurancePolicyStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T16:50:31.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ClaimStatus.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\ClaimStatus.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Enums\\ClaimStatus.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\ClaimStatus.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Enums\\ClaimStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:42:12.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "InsuranceType.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\InsuranceType.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Enums\\InsuranceType.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\InsuranceType.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Enums\\InsuranceType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:41:51.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PaymentStatus.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\PaymentStatus.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Enums\\PaymentStatus.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\PaymentStatus.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Enums\\PaymentStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:41:44.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoanService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\LoanService.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Services\\LoanService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\LoanService.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Services\\LoanService.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAAUwMEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:34:09.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\UserRole.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Enums\\UserRole.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\UserRole.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Enums\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:42:05.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Program.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Program.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAE4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:45:54.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "frmMainDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmMainDashboard.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmMainDashboard.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmMainDashboard.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmMainDashboard.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAADwvyIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:45:32.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "frmReports.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmReports.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmReports.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmReports.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmReports.cs",
+              "ViewState": "AgIAABwCAAAAAAAAAAAQwCsCAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:58:07.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PesoPinoy.BLL.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\PesoPinoy.BLL.csproj",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\PesoPinoy.BLL.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\PesoPinoy.BLL.csproj",
+              "RelativeToolTip": "PesoPinoy.BLL\\PesoPinoy.BLL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-05T00:15:29.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PesoPinoy.DAL.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\PesoPinoy.DAL.csproj",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\PesoPinoy.DAL.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\PesoPinoy.DAL.csproj",
+              "RelativeToolTip": "PesoPinoy.DAL\\PesoPinoy.DAL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-05T00:15:46.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PesoPinoy.Models.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\PesoPinoy.Models.csproj",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\PesoPinoy.Models.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\PesoPinoy.Models.csproj",
+              "RelativeToolTip": "PesoPinoy.Models\\PesoPinoy.Models.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-05T00:25:36.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20260305143542_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Migrations\\20260305143542_InitialCreate.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Migrations\\20260305143542_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Migrations\\20260305143542_InitialCreate.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Migrations\\20260305143542_InitialCreate.cs",
+              "ViewState": "AgIAAHoBAAAAAAAAAAAAAIMBAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T14:35:43.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ucLoanCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Controls\\ucLoanCalculator.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Controls\\ucLoanCalculator.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Controls\\ucLoanCalculator.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Controls\\ucLoanCalculator.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:59:17.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\appsettings.json",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\appsettings.json",
+              "RelativeToolTip": "PesoPinoy.UI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-05T03:36:28.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ucDashboardCards.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Controls\\ucDashboardCards.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Controls\\ucDashboardCards.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Controls\\ucDashboardCards.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Controls\\ucDashboardCards.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:59:00.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ucDashboardCards.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Controls\\ucDashboardCards.Designer.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Controls\\ucDashboardCards.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Controls\\ucDashboardCards.Designer.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Controls\\ucDashboardCards.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:59:09.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "BackupService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\BackupService.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Services\\BackupService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\BackupService.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Services\\BackupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:34:55.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "DesignTimeDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Data\\DesignTimeDbContextFactory.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Data\\DesignTimeDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Data\\DesignTimeDbContextFactory.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Data\\DesignTimeDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:37:18.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "PaymentMethod.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\PaymentMethod.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Enums\\PaymentMethod.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\PaymentMethod.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Enums\\PaymentMethod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:42:19.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "TransactionType.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\TransactionType.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Enums\\TransactionType.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\TransactionType.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Enums\\TransactionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:41:58.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "LoanStatus.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\LoanStatus.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Enums\\LoanStatus.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\LoanStatus.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Enums\\LoanStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:41:35.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "RiskClassification.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\RiskClassification.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Enums\\RiskClassification.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Enums\\RiskClassification.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Enums\\RiskClassification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:41:28.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "InsuranceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\InsuranceRepository.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Repositories\\InsuranceRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\InsuranceRepository.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Repositories\\InsuranceRepository.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAiwB8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:39:15.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "IInsuranceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\IInsuranceRepository.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Repositories\\IInsuranceRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\IInsuranceRepository.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Repositories\\IInsuranceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:39:06.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "SavingsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\SavingsRepository.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Repositories\\SavingsRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\SavingsRepository.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Repositories\\SavingsRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:38:59.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ISavingsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\ISavingsRepository.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Repositories\\ISavingsRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\ISavingsRepository.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Repositories\\ISavingsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:38:50.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "PaymentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\PaymentRepository.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Repositories\\PaymentRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\PaymentRepository.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Repositories\\PaymentRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAiwCcAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:38:43.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "IPaymentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\IPaymentRepository.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Repositories\\IPaymentRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\IPaymentRepository.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Repositories\\IPaymentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:38:34.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ILoanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\ILoanRepository.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Repositories\\ILoanRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\ILoanRepository.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Repositories\\ILoanRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:38:19.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoanValidator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Validators\\LoanValidator.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Validators\\LoanValidator.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Validators\\LoanValidator.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Validators\\LoanValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:36:08.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "IRiskAnalysisService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Interfaces\\IRiskAnalysisService.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Interfaces\\IRiskAnalysisService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Interfaces\\IRiskAnalysisService.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Interfaces\\IRiskAnalysisService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:35:20.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Interfaces\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Interfaces\\IPaymentService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Interfaces\\IPaymentService.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Interfaces\\IPaymentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:35:13.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ILoanService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Interfaces\\ILoanService.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Interfaces\\ILoanService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Interfaces\\ILoanService.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Interfaces\\ILoanService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:35:06.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "ThemeManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Helpers\\ThemeManager.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Helpers\\ThemeManager.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Helpers\\ThemeManager.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Helpers\\ThemeManager.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAiwFkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:33:17.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ucLoanCalculator.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Controls\\ucLoanCalculator.Designer.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Controls\\ucLoanCalculator.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Controls\\ucLoanCalculator.Designer.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Controls\\ucLoanCalculator.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:59:29.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "frmBackupRestore.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmBackupRestore.Designer.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmBackupRestore.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmBackupRestore.Designer.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmBackupRestore.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:58:41.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "frmReports.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmReports.Designer.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmReports.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmReports.Designer.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmReports.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:58:27.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "frmPaymentScheduler.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmPaymentScheduler.Designer.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmPaymentScheduler.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmPaymentScheduler.Designer.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmPaymentScheduler.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:57:57.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "frmInsuranceManagement.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmInsuranceManagement.Designer.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmInsuranceManagement.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmInsuranceManagement.Designer.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmInsuranceManagement.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:57:22.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "frmSavingsManagement.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmSavingsManagement.Designer.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmSavingsManagement.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmSavingsManagement.Designer.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmSavingsManagement.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:56:09.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "frmAmortizationSchedule.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmAmortizationSchedule.Designer.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmAmortizationSchedule.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmAmortizationSchedule.Designer.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmAmortizationSchedule.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:55:55.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "frmLoanManagement.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmLoanManagement.Designer.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmLoanManagement.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmLoanManagement.Designer.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmLoanManagement.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:55:44.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "AuditLog.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\AuditLog.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Entities\\AuditLog.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\AuditLog.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Entities\\AuditLog.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:40:56.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "LoanApplicationDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\DTOs\\LoanApplicationDto.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\DTOs\\LoanApplicationDto.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\DTOs\\LoanApplicationDto.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\DTOs\\LoanApplicationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:42:41.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "PaymentDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\DTOs\\PaymentDto.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\DTOs\\PaymentDto.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\DTOs\\PaymentDto.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\DTOs\\PaymentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:42:48.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "DashboardSummaryDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\DTOs\\DashboardSummaryDto.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\DTOs\\DashboardSummaryDto.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\DTOs\\DashboardSummaryDto.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\DTOs\\DashboardSummaryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:42:55.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "RiskAnalysisDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\DTOs\\RiskAnalysisDto.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\DTOs\\RiskAnalysisDto.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\DTOs\\RiskAnalysisDto.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\DTOs\\RiskAnalysisDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:43:02.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "AmortizationSchedule.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\AmortizationSchedule.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Entities\\AmortizationSchedule.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\AmortizationSchedule.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Entities\\AmortizationSchedule.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwBYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:40:49.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "SavingsTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\SavingsTransaction.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Entities\\SavingsTransaction.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\SavingsTransaction.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Entities\\SavingsTransaction.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:40:25.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwBIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:39:29.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:39:22.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "BorrowerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\BorrowerRepository.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Repositories\\BorrowerRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\BorrowerRepository.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Repositories\\BorrowerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:38:11.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "IBorrowerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\IBorrowerRepository.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Repositories\\IBorrowerRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\IBorrowerRepository.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Repositories\\IBorrowerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:37:58.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "BorrowerValidator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Validators\\BorrowerValidator.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Validators\\BorrowerValidator.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Validators\\BorrowerValidator.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Validators\\BorrowerValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:36:00.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "PenaltyCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Helpers\\PenaltyCalculator.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Helpers\\PenaltyCalculator.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Helpers\\PenaltyCalculator.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Helpers\\PenaltyCalculator.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:35:37.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "LoanCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Helpers\\LoanCalculator.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Helpers\\LoanCalculator.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Helpers\\LoanCalculator.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Helpers\\LoanCalculator.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAiwE8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:35:28.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "ReportService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\ReportService.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Services\\ReportService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\ReportService.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Services\\ReportService.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAiwEgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:34:47.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "RiskAnalysisService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\RiskAnalysisService.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Services\\RiskAnalysisService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\RiskAnalysisService.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Services\\RiskAnalysisService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAiwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:34:40.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "SavingsService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\SavingsService.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Services\\SavingsService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\SavingsService.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Services\\SavingsService.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAiwHUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:34:24.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "BorrowerService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\BorrowerService.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Services\\BorrowerService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\BorrowerService.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Services\\BorrowerService.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAiwFQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:33:59.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "frmMainDashboard.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmMainDashboard.Designer.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmMainDashboard.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmMainDashboard.Designer.cs",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmMainDashboard.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T01:47:14.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\Base\\IRepository.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Repositories\\Base\\IRepository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\Base\\IRepository.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Repositories\\Base\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:37:41.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\Base\\Repository.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Repositories\\Base\\Repository.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Repositories\\Base\\Repository.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Repositories\\Base\\Repository.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAiwDYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:37:48.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Services\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Services\\AuthenticationService.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAiwD8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:33:51.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "RiskScoreCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Helpers\\RiskScoreCalculator.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Helpers\\RiskScoreCalculator.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Helpers\\RiskScoreCalculator.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Helpers\\RiskScoreCalculator.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAiwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:35:44.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "SavingsAccount.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\SavingsAccount.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Entities\\SavingsAccount.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\SavingsAccount.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Entities\\SavingsAccount.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:40:12.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\Payment.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Entities\\Payment.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\Payment.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Entities\\Payment.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA2wCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:40:06.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "Loan.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\Loan.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Entities\\Loan.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\Loan.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Entities\\Loan.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAiwC8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:39:59.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "Borrower.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\Borrower.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Entities\\Borrower.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\Borrower.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Entities\\Borrower.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAA2wDEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:39:52.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Entities\\User.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:39:46.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "ucLoanCalculator.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Controls\\ucLoanCalculator.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Controls\\ucLoanCalculator.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Controls\\ucLoanCalculator.cs [Design]",
+              "RelativeToolTip": "PesoPinoy.UI\\Controls\\ucLoanCalculator.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:32:58.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "ucDashboardCards.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Controls\\ucDashboardCards.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Controls\\ucDashboardCards.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Controls\\ucDashboardCards.cs [Design]",
+              "RelativeToolTip": "PesoPinoy.UI\\Controls\\ucDashboardCards.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:32:46.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "frmBackupRestore.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmBackupRestore.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmBackupRestore.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmBackupRestore.cs [Design]",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmBackupRestore.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:31:57.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "frmReports.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmReports.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmReports.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmReports.cs [Design]",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmReports.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:31:46.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "frmPaymentScheduler.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmPaymentScheduler.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmPaymentScheduler.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmPaymentScheduler.cs [Design]",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmPaymentScheduler.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:31:35.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "frmInsuranceManagement.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmInsuranceManagement.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmInsuranceManagement.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmInsuranceManagement.cs [Design]",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmInsuranceManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:31:24.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "frmSavingsManagement.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmSavingsManagement.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmSavingsManagement.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmSavingsManagement.cs [Design]",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmSavingsManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:31:06.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "frmAmortizationSchedule.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmAmortizationSchedule.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmAmortizationSchedule.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmAmortizationSchedule.cs [Design]",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmAmortizationSchedule.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:30:56.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "frmLoanManagement.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmLoanManagement.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmLoanManagement.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmLoanManagement.cs [Design]",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmLoanManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:30:45.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 102,
+              "Title": "frmBorrowerManagement.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmBorrowerManagement.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmBorrowerManagement.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmBorrowerManagement.cs [Design]",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmBorrowerManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:30:32.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "frmMainDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmMainDashboard.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmMainDashboard.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmMainDashboard.cs [Design]",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmMainDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:30:21.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 104,
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmLogin.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Forms\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Forms\\frmLogin.cs [Design]",
+              "RelativeToolTip": "PesoPinoy.UI\\Forms\\frmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:28:51.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 105,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Class1.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.Models\\Class1.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.Models\\Class1.cs",
+              "RelativeToolTip": "PesoPinoy.Models\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:14:55.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 106,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Class1.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.DAL\\Class1.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.DAL\\Class1.cs",
+              "RelativeToolTip": "PesoPinoy.DAL\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:14:39.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 107,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Class1.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.BLL\\Class1.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.BLL\\Class1.cs",
+              "RelativeToolTip": "PesoPinoy.BLL\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:13:56.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 108,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Form1.cs",
+              "RelativeDocumentMoniker": "PesoPinoy.UI\\Form1.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Mitochondria_SDG1_PESOPINOY\\CODE\\PesoPinoy.UI\\Form1.cs [Design]",
+              "RelativeToolTip": "PesoPinoy.UI\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T00:13:36.402Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
