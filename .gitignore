@@ -1,0 +1,254 @@
+# =====================================================
+# .gitignore for PesoPinoy Microfinance System
+# =====================================================
+
+# =====================================================
+# Visual Studio / .NET Core
+# =====================================================
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+## Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.ide/
+*.pidb
+*.boj
+*.userprefs
+.vscode/
+
+## Project files
+*.csproj.user
+*.csproj.user.prebuilt
+*.csproj.user.defaults
+*.suo
+*.sln.ide/
+*.ntvs_docker.props
+*.ntvs_docker.targets
+
+## Profiling
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+## Visual Studio Caches
+*.cache
+*.dtbcache.v2
+*.dbmdl
+*.dbml
+
+## Coverage
+*.coverage
+*.coveragexml
+
+## Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Rr]esult*/
+TestResults/
+*.trx
+*.tmp
+*.tmp_import
+
+## Code coverage
+coverage/
+coverage.json
+*.opencover.xml
+
+## Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+
+# =====================================================
+# Database files (EXCLUDE production, INCLUDE seed)
+# =====================================================
+# Exclude the actual database file
+INPUT_DATA/pesopinoy.db
+INPUT_DATA/*.db
+INPUT_DATA/*.db-shm
+INPUT_DATA/*.db-wal
+INPUT_DATA/*.sqlite
+
+# But keep seed and backup data (optional - comment if you want to exclude)
+INPUT_DATA/initial_seed.json
+INPUT_DATA/backup_data.json
+!INPUT_DATA/*.json
+
+# =====================================================
+# User-specific files
+# =====================================================
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.dotCover
+*.ncrunchproject
+*crunch.local.json
+*.ncrunchsolution
+*.crunchsolution.*
+*.crunchproject.*
+
+# =====================================================
+# NuGet Packages
+# =====================================================
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+*.nuget.targets
+*.nuget.props
+*.nupkg.metadata
+*.nuget.cache
+
+# =====================================================
+# dotnet tooling
+# =====================================================
+**/.store
+*.temp
+*.tmp
+*.log
+*.tlog
+
+# =====================================================
+# Entity Framework Migrations / Snapshots
+# =====================================================
+# Keep migrations, but exclude temp files
+**/Migrations/*.Designer.cs
+**/Migrations/*.cs
+!**/Migrations/AppDbContextModelSnapshot.cs
+
+# =====================================================
+# Logs and databases
+# =====================================================
+*.log
+*.dat
+*.csv
+*.tsv
+*.sqlite3
+*.db3
+
+# =====================================================
+# OS generated files
+# =====================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.DS_Store
+desktop.ini
+$RECYCLE.BIN/
+
+# =====================================================
+# Windows specific
+# =====================================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# =====================================================
+# Linux/Mac specific
+# =====================================================
+*.swp
+*.swo
+*~
+.DS_Store
+.directory
+*.lock
+
+# =====================================================
+# JetBrains IDEs (Rider)
+# =====================================================
+.idea/
+*.sln.iml
+*.rider
+*.user
+*.DotSettings.user
+*.sln.DotSettings.user
+*.resharper
+*.resharper.user
+
+# =====================================================
+# Visual Studio Code
+# =====================================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# =====================================================
+# Project-specific excludes
+# =====================================================
+# Exclude local app settings
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Local.json
+
+# Exclude temporary files
+CODE/PesoPinoy.UI/Properties/PublishProfiles/
+*.pubxml
+*.pubxml.user
+
+# Exclude user-specific solution options
+*.suo
+*.user
+*.userosscache
+*.vssscc
+.vs/
+
+# =====================================================
+# Publish outputs
+# =====================================================
+publish/
+publish.zip
+*.publish.xml
+*.publish.config
+
+# =====================================================
+# Backup files from your system
+# =====================================================
+backup_*.json
+*.backup.json
+*.backup
+
+# =====================================================
+# Node.js (if any)
+# =====================================================
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# =====================================================
+# Keep these files (don't ignore)
+# =====================================================
+!.gitkeep
+!.gitattributes
+!README.md
+!.env.example
+!appsettings.json 

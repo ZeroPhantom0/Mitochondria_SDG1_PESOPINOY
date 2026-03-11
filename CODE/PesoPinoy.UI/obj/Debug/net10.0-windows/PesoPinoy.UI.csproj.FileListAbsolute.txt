@@ -691,3 +691,4 @@ C:\Users\yfrie\Downloads\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.UI\obj\Debug
 C:\Users\yfrie\Downloads\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.UI\obj\Debug\net10.0-windows\PesoPinoy.UI.pdb
 C:\Users\yfrie\Downloads\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.UI\obj\Debug\net10.0-windows\PesoPinoy.UI.genruntimeconfig.cache
 C:\Users\yfrie\Downloads\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.UI\obj\Debug\net10.0-windows\ref\PesoPinoy.UI.dll
+C:\Users\user\source\repos\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.UI\obj\Debug\net10.0-windows\PesoPinoy.UI.sourcelink.json

@@ -31,3 +31,4 @@ C:\Users\yfrie\Downloads\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.Models\obj\D
 C:\Users\yfrie\Downloads\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.Models\obj\Debug\net10.0\refint\PesoPinoy.Models.dll
 C:\Users\yfrie\Downloads\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.Models\obj\Debug\net10.0\PesoPinoy.Models.pdb
 C:\Users\yfrie\Downloads\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.Models\obj\Debug\net10.0\ref\PesoPinoy.Models.dll
+C:\Users\user\source\repos\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.Models\obj\Debug\net10.0\PesoPinoy.Models.sourcelink.json

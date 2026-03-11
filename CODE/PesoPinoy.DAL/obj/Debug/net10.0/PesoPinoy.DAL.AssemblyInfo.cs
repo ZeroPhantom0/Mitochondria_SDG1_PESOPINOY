@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PesoPinoy.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+caf75d2c8ac3397c621f1e37348d5c68dd74279d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PesoPinoy.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PesoPinoy.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

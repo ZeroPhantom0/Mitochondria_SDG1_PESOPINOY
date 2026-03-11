@@ -49,3 +49,4 @@ C:\Users\yfrie\Downloads\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.BLL\obj\Debu
 C:\Users\yfrie\Downloads\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.BLL\obj\Debug\net10.0\refint\PesoPinoy.BLL.dll
 C:\Users\yfrie\Downloads\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.BLL\obj\Debug\net10.0\PesoPinoy.BLL.pdb
 C:\Users\yfrie\Downloads\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.BLL\obj\Debug\net10.0\ref\PesoPinoy.BLL.dll
+C:\Users\user\source\repos\Mitochondria_SDG1_PESOPINOY\CODE\PesoPinoy.BLL\obj\Debug\net10.0\PesoPinoy.BLL.sourcelink.json
