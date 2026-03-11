@@ -1,254 +1,157 @@
 # =====================================================
-# .gitignore for PesoPinoy Microfinance System
-# =====================================================
+
+# .gitignore for .NET / Visual Studio Project
+
+# PesoPinoy Microfinance System
 
 # =====================================================
-# Visual Studio / .NET Core
-# =====================================================
-## Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
+
+# ================================
+
+# Build folders
+
+# ================================
+
+bin/
+obj/
+out/
 build/
 bld/
-[Bb]in/
-[Oo]bj/
-[Oo]ut/
-msbuild.log
-msbuild.err
-msbuild.wrn
+Debug/
+Release/
+x64/
+x86/
 
-## Visual Studio files
+# ================================
+
+# Visual Studio files
+
+# ================================
+
 .vs/
+.vscode/
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
-*.ide/
-*.pidb
-*.boj
-*.userprefs
-.vscode/
-
-## Project files
-*.csproj.user
-*.csproj.user.prebuilt
-*.csproj.user.defaults
-*.suo
-*.sln.ide/
-*.ntvs_docker.props
-*.ntvs_docker.targets
-
-## Profiling
-*.psess
-*.vsp
-*.vspx
-*.sap
-
-## Visual Studio Caches
-*.cache
-*.dtbcache.v2
-*.dbmdl
-*.dbml
-
-## Coverage
-*.coverage
-*.coveragexml
-
-## Test results
-[Tt]est[Rr]esult*/
-[Bb]uild[Rr]esult*/
-TestResults/
-*.trx
-*.tmp
-*.tmp_import
-
-## Code coverage
-coverage/
-coverage.json
-*.opencover.xml
-
-## Backup files
-*.bak
-*.backup
-*.old
-*.orig
-*.tmp
-
-# =====================================================
-# Database files (EXCLUDE production, INCLUDE seed)
-# =====================================================
-# Exclude the actual database file
-INPUT_DATA/pesopinoy.db
-INPUT_DATA/*.db
-INPUT_DATA/*.db-shm
-INPUT_DATA/*.db-wal
-INPUT_DATA/*.sqlite
-
-# But keep seed and backup data (optional - comment if you want to exclude)
-INPUT_DATA/initial_seed.json
-INPUT_DATA/backup_data.json
-!INPUT_DATA/*.json
-
-# =====================================================
-# User-specific files
-# =====================================================
 *.rsuser
-*.suo
-*.user
-*.userosscache
-*.dotCover
-*.ncrunchproject
-*crunch.local.json
-*.ncrunchsolution
-*.crunchsolution.*
-*.crunchproject.*
 
-# =====================================================
-# NuGet Packages
-# =====================================================
-packages/
-*.nupkg
-project.lock.json
-project.assets.json
-*.nuget.targets
-*.nuget.props
-*.nupkg.metadata
-*.nuget.cache
+# ================================
 
-# =====================================================
-# dotnet tooling
-# =====================================================
-**/.store
-*.temp
-*.tmp
+# Logs
+
+# ================================
+
 *.log
 *.tlog
 
-# =====================================================
-# Entity Framework Migrations / Snapshots
-# =====================================================
-# Keep migrations, but exclude temp files
-**/Migrations/*.Designer.cs
-**/Migrations/*.cs
-!**/Migrations/AppDbContextModelSnapshot.cs
+# ================================
 
-# =====================================================
-# Logs and databases
-# =====================================================
-*.log
-*.dat
-*.csv
-*.tsv
-*.sqlite3
-*.db3
+# Temporary files
 
-# =====================================================
-# OS generated files
-# =====================================================
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-*.DS_Store
-desktop.ini
-$RECYCLE.BIN/
+# ================================
 
-# =====================================================
-# Windows specific
-# =====================================================
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# =====================================================
-# Linux/Mac specific
-# =====================================================
-*.swp
-*.swo
-*~
-.DS_Store
-.directory
-*.lock
-
-# =====================================================
-# JetBrains IDEs (Rider)
-# =====================================================
-.idea/
-*.sln.iml
-*.rider
-*.user
-*.DotSettings.user
-*.sln.DotSettings.user
-*.resharper
-*.resharper.user
-
-# =====================================================
-# Visual Studio Code
-# =====================================================
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
-
-# =====================================================
-# Project-specific excludes
-# =====================================================
-# Exclude local app settings
-appsettings.Development.json
-appsettings.Production.json
-appsettings.Local.json
-
-# Exclude temporary files
-CODE/PesoPinoy.UI/Properties/PublishProfiles/
-*.pubxml
-*.pubxml.user
-
-# Exclude user-specific solution options
-*.suo
-*.user
-*.userosscache
-*.vssscc
-.vs/
-
-# =====================================================
-# Publish outputs
-# =====================================================
-publish/
-publish.zip
-*.publish.xml
-*.publish.config
-
-# =====================================================
-# Backup files from your system
-# =====================================================
-backup_*.json
-*.backup.json
+*.tmp
+*.temp
+*.cache
+*.bak
 *.backup
+*.old
 
-# =====================================================
-# Node.js (if any)
-# =====================================================
+# ================================
+
+# Test Results
+
+# ================================
+
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# ================================
+
+# NuGet
+
+# ================================
+
+packages/
+*.nupkg
+*.nuget.props
+*.nuget.targets
+
+# ================================
+
+# Node.js (if used)
+
+# ================================
+
 node_modules/
 npm-debug.log
 yarn-error.log
 package-lock.json
 yarn.lock
 
-# =====================================================
-# Keep these files (don't ignore)
-# =====================================================
+# ================================
+
+# SQLite / Local Databases
+
+# ================================
+
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# ================================
+
+# Application settings
+
+# ================================
+
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+
+# ================================
+
+# Publish outputs
+
+# ================================
+
+publish/
+*.publish.xml
+*.publish.config
+
+# ================================
+
+# OS generated files
+
+# ================================
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+$RECYCLE.BIN/
+
+# ================================
+
+# Backup files
+
+# ================================
+
+*.backup.json
+backup_*.json
+
+# ================================
+
+# Keep important files
+
+# ================================
+
 !.gitkeep
-!.gitattributes
 !README.md
 !.env.example
-!appsettings.json 
+!appsettings.json
