@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using PesoPinoy.BLL.Services;
 using PesoPinoy.Models.Enums;
+using PesoPinoy.UI.Helpers;
 using ScottPlot;
 using ScottPlot.WinForms;
 using System;
@@ -23,6 +24,10 @@ namespace PesoPinoy.UI.Forms
         private FormsPlot collectionsChart;
         private FormsPlot riskChart;
         private FormsLabel lblCard1Value, lblCard2Value, lblCard3Value, lblCard4Value;
+        private FormsLabel lblLastUpdate;
+        private Button btnRefresh;
+        private System.Windows.Forms.Timer refreshTimer;
+        private DateTime lastRefresh = DateTime.Now;
 
         private readonly BorrowerService _borrowerService;
         private readonly LoanService _loanService;
@@ -49,11 +54,23 @@ namespace PesoPinoy.UI.Forms
                 this.Text = "PesoPinoy - Administrator Dashboard";
                 this.StartPosition = FormStartPosition.CenterScreen;
 
-                // Create ALL UI elements first
+                // Create UI elements
                 CreateSidePanel();
                 CreateContentArea();
 
-                // Then load data
+                // Setup real-time features
+                SetupRealTimeRefresh();
+
+                // Subscribe to data change events
+                DashboardEvents.DataChanged += async (s, e) =>
+                {
+                    if (this.Visible)
+                    {
+                        await RefreshDashboardData();
+                    }
+                };
+
+                // Load initial data
                 this.Load += async (s, e) => await LoadDashboardData();
             }
             catch (Exception ex)
@@ -61,6 +78,27 @@ namespace PesoPinoy.UI.Forms
                 MessageBox.Show($"Error initializing dashboard: {ex.Message}", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void SetupRealTimeRefresh()
+        {
+            refreshTimer = new System.Windows.Forms.Timer();
+            refreshTimer.Interval = 30000; // Refresh every 30 seconds
+            refreshTimer.Tick += async (s, e) =>
+            {
+                // Only refresh if dashboard is visible and it's been at least 30 seconds
+                if (this.Visible && (DateTime.Now - lastRefresh).TotalSeconds >= 30)
+                {
+                    await RefreshDashboardData();
+                    lastRefresh = DateTime.Now;
+                }
+            };
+            refreshTimer.Start();
+        }
+
+        public async Task RefreshDashboardData()
+        {
+            await LoadDashboardData();
         }
 
         private void CreateSidePanel()
@@ -143,7 +181,7 @@ namespace PesoPinoy.UI.Forms
         {
             contentPanel = new Panel
             {
-                Location = new Point(250, 0),  // Start after sidebar
+                Location = new Point(250, 0),
                 Width = this.ClientSize.Width - 250,
                 Height = this.ClientSize.Height,
                 BackColor = DrawingColor.White,
@@ -154,7 +192,7 @@ namespace PesoPinoy.UI.Forms
             lblWelcome = new FormsLabel
             {
                 Text = $"Welcome, {Program.CurrentUser?.FullName ?? "Administrator"}",
-                Font = new Font(new FontFamily("Segoe UI"), 16, DrawingFontStyle.Bold),
+                Font = new Font("Segoe UI", 16, DrawingFontStyle.Bold),
                 ForeColor = DrawingColor.FromArgb(2, 58, 128),
                 Location = new Point(20, 20),
                 AutoSize = true
@@ -171,6 +209,8 @@ namespace PesoPinoy.UI.Forms
             {
                 contentPanel.Width = this.ClientSize.Width - 250;
                 contentPanel.Height = this.ClientSize.Height;
+                if (btnRefresh != null)
+                    btnRefresh.Location = new Point(contentPanel.Width - 140, 20);
                 RepositionCharts();
             };
         }
@@ -189,7 +229,7 @@ namespace PesoPinoy.UI.Forms
             int cardHeight = 100;
             int spacing = 20;
             int startX = 20;
-            int startY = 70;
+            int startY = 80;
 
             for (int i = 0; i < cardTitles.Length; i++)
             {
@@ -240,7 +280,7 @@ namespace PesoPinoy.UI.Forms
         {
             try
             {
-                int chartY = 200;
+                int chartY = 210;
 
                 // Collections chart
                 collectionsChart = new FormsPlot
@@ -284,9 +324,9 @@ namespace PesoPinoy.UI.Forms
         private void RepositionCharts()
         {
             if (collectionsChart != null)
-                collectionsChart.Location = new Point(20, 200);
+                collectionsChart.Location = new Point(20, 210);
             if (riskChart != null)
-                riskChart.Location = new Point(540, 200);
+                riskChart.Location = new Point(540, 210);
         }
 
         private async Task LoadDashboardData()
@@ -294,15 +334,22 @@ namespace PesoPinoy.UI.Forms
             try
             {
                 if (_borrowerService == null || _loanService == null ||
-                    _paymentService == null || _riskService == null) return;
+                    _paymentService == null || _riskService == null)
+                {
+                    this.Invoke(new Action(() =>
+                    {
+                        lblLastUpdate.Text = "Last update failed: Services not available";
+                    }));
+                    return;
+                }
 
                 // Load data
                 var borrowers = await _borrowerService.GetAllBorrowersAsync();
                 var loans = await _loanService.GetAllLoansAsync();
 
                 // Calculate statistics
-                int totalBorrowers = borrowers.Count();
-                int activeLoans = loans.Count(l => l.Status == LoanStatus.Active);
+                int totalBorrowers = borrowers?.Count() ?? 0;
+                int activeLoans = loans?.Count(l => l.Status == LoanStatus.Active) ?? 0;
 
                 // Get current month collections
                 var now = DateTime.Now;
@@ -310,8 +357,10 @@ namespace PesoPinoy.UI.Forms
                 var endOfMonth = startOfMonth.AddMonths(1).AddDays(-1);
                 var monthlyCollections = await _paymentService.GetTotalCollectionsAsync(startOfMonth, endOfMonth);
 
-                // Calculate average risk score (0-100 scale)
-                double avgRiskScore = borrowers.Any() ? Math.Round((double)borrowers.Average(b => b.RiskScore), 1) : 0;
+                // Calculate average risk score
+                double avgRiskScore = borrowers != null && borrowers.Any()
+                    ? Math.Round((double)borrowers.Average(b => b.RiskScore), 1)
+                    : 0;
 
                 // Update cards on UI thread
                 this.Invoke(new Action(() =>
@@ -320,15 +369,26 @@ namespace PesoPinoy.UI.Forms
                     if (lblCard2Value != null) lblCard2Value.Text = activeLoans.ToString("N0");
                     if (lblCard3Value != null) lblCard3Value.Text = $"₱{monthlyCollections:N0}";
                     if (lblCard4Value != null) lblCard4Value.Text = $"{avgRiskScore:F1}";
+
+                    lblWelcome.Text = $"Welcome, {Program.CurrentUser?.FullName ?? "Administrator"}";
                 }));
 
                 // Update charts
                 await LoadMonthlyCollectionsChart();
                 await LoadRiskDistributionChart(borrowers);
+
+                System.Diagnostics.Debug.WriteLine($"Dashboard loaded successfully at {DateTime.Now}");
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Error loading dashboard data: {ex.Message}");
+                this.Invoke(new Action(() =>
+                {
+                    lblLastUpdate.Text = $"Last update failed: {DateTime.Now:hh:mm:ss tt}";
+                }));
+
+                System.Diagnostics.Debug.WriteLine($"Dashboard error: {ex}");
+                MessageBox.Show($"Error loading dashboard data: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -464,6 +524,9 @@ namespace PesoPinoy.UI.Forms
             {
                 T form = new T();
                 form.ShowDialog();
+
+                // Notify dashboard that data might have changed when form closes
+                DashboardEvents.NotifyDataChanged();
             }
             catch (Exception ex)
             {
@@ -479,11 +542,22 @@ namespace PesoPinoy.UI.Forms
 
             if (result == DialogResult.Yes)
             {
+                refreshTimer?.Stop();
+                refreshTimer?.Dispose();
+
                 Program.CurrentUser = null;
                 var login = new frmLogin();
                 login.Show();
                 this.Close();
             }
+        }
+
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            refreshTimer?.Stop();
+            refreshTimer?.Dispose();
+            DashboardEvents.DataChanged -= null;
+            base.OnFormClosed(e);
         }
     }
 }

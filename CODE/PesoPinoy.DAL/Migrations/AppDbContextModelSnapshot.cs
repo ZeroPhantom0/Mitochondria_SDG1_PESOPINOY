@@ -24,15 +24,18 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("BeginningBalance")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("DueDate")
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("EndingBalance")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("InterestAmount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<int>("LoanId")
@@ -42,12 +45,14 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("PaymentAmount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<int>("PaymentNumber")
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("PrincipalAmount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Remarks")
@@ -101,12 +106,17 @@ namespace PesoPinoy.DAL.Migrations
                     b.Property<DateTime>("Timestamp")
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("UserId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("UserName")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
                     b.HasKey("AuditLogId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("AuditLogs");
                 });
@@ -166,6 +176,7 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("MonthlyIncome")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ReasonForLoan")
@@ -179,6 +190,7 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("RiskScore")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.HasKey("BorrowerId");
@@ -196,9 +208,11 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal?>("ApprovedAmount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("ClaimAmount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ClaimNumber")
@@ -249,6 +263,7 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("Amount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("DueDate")
@@ -305,6 +320,7 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("CoverageAmount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("EndDate")
@@ -320,6 +336,7 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("PremiumAmount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("StartDate")
@@ -355,6 +372,7 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("BalanceRemaining")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<int>("BorrowerId")
@@ -388,6 +406,7 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("MonthlyPayment")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("PrincipalAmount")
@@ -404,9 +423,11 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("TotalAmountPayable")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("TotalInterest")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.HasKey("LoanId");
@@ -428,6 +449,7 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("AmountDue")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("AmountPaid")
@@ -447,9 +469,11 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("InterestPaid")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("LatePenalty")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<int>("LoanId")
@@ -467,6 +491,7 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("PrincipalPaid")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ReferenceNumber")
@@ -503,9 +528,11 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("CurrentBalance")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("InterestRate")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("IsActive")
@@ -534,12 +561,15 @@ namespace PesoPinoy.DAL.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<decimal>("Amount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("BalanceAfter")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("BalanceBefore")
+                        .HasPrecision(18, 2)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
@@ -627,6 +657,14 @@ namespace PesoPinoy.DAL.Migrations
                     b.Navigation("Loan");
                 });
 
+            modelBuilder.Entity("PesoPinoy.Models.Entities.AuditLog", b =>
+                {
+                    b.HasOne("PesoPinoy.Models.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.SetNull);
+                });
+
             modelBuilder.Entity("PesoPinoy.Models.Entities.InsuranceClaim", b =>
                 {
                     b.HasOne("PesoPinoy.Models.Entities.InsurancePolicy", "InsurancePolicy")
@@ -654,7 +692,7 @@ namespace PesoPinoy.DAL.Migrations
                     b.HasOne("PesoPinoy.Models.Entities.Borrower", "Borrower")
                         .WithMany("InsurancePolicies")
                         .HasForeignKey("BorrowerId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Borrower");
@@ -665,12 +703,13 @@ namespace PesoPinoy.DAL.Migrations
                     b.HasOne("PesoPinoy.Models.Entities.Borrower", "Borrower")
                         .WithMany("Loans")
                         .HasForeignKey("BorrowerId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("PesoPinoy.Models.Entities.InsurancePolicy", "InsurancePolicy")
                         .WithMany("Loans")
-                        .HasForeignKey("InsurancePolicyId");
+                        .HasForeignKey("InsurancePolicyId")
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Borrower");
 
@@ -693,7 +732,7 @@ namespace PesoPinoy.DAL.Migrations
                     b.HasOne("PesoPinoy.Models.Entities.Borrower", "Borrower")
                         .WithMany("SavingsAccounts")
                         .HasForeignKey("BorrowerId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Borrower");

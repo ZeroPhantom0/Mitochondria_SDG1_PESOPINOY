@@ -62,7 +62,7 @@ namespace PesoPinoy.UI
         private static void ConfigureServices(IServiceCollection services)
         {
             var connectionString = Configuration?.GetConnectionString("DefaultConnection")
-                ?? "Data Source=..\\..\\INPUT_DATA\\pesopinoy.db";
+                ?? "Data Source=..\\..\\..\\..\\INPUT_DATA\\pesopinoy.db";
 
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlite(connectionString));
@@ -80,10 +80,33 @@ namespace PesoPinoy.UI
 
         private static void SeedDefaultAdmin(AppDbContext context)
         {
-            if (!context.Users.Any())
+            var admin = context.Users.FirstOrDefault(u => u.Username == "admin");
+
+            if (admin == null)
             {
+                // Create new admin
                 var authService = new AuthenticationService(context);
-                var admin = authService.CreateUserAsync("admin", "admin123", "System Administrator", "admin@pesopinoy.com").Result;
+                authService.CreateUserAsync("admin", "admin123", "System Administrator", "admin@pesopinoy.com").Wait();
+                Console.WriteLine("Admin user created with password: admin123");
+            }
+            else
+            {
+                // Verify the password works by testing it
+                var authService = new AuthenticationService(context);
+                var canLogin = authService.AuthenticateAsync("admin", "admin123").Result;
+
+                if (canLogin == null)
+                {
+                    // Password doesn't match - reset it
+                    Console.WriteLine("Admin password invalid - resetting to admin123");
+
+                    // Remove old admin
+                    context.Users.Remove(admin);
+                    context.SaveChanges();
+
+                    // Create new admin with correct hash
+                    authService.CreateUserAsync("admin", "admin123", "System Administrator", "admin@pesopinoy.com").Wait();
+                }
             }
         }
     }

@@ -1,505 +1,1923 @@
 {
-  "Users": [
-    {
-      "UserId": 1,
-      "Username": "admin",
-      "PasswordHash": "AQAAAAIAAYagAAAAEI...", 
-      "Salt": "sGk7Rm7Q2pX9vL4nW8yB3tF5jH1cK6mN",
-      "FullName": "System Administrator",
-      "Email": "admin@pesopinoy.com",
-      "LastLoginDate": "2026-03-12T08:30:00",
-      "IsActive": true,
-      "CreatedDate": "2026-01-01T09:00:00"
-    },
-    {
-      "UserId": 2,
-      "Username": "loan_officer",
-      "PasswordHash": "AQAAAAIAAYagAAAAEI...",
-      "Salt": "rT5nB8yH2jL9pX4mW7kC1vF6dG3sA8qZ",
-      "FullName": "Maria Santos",
-      "Email": "maria.santos@pesopinoy.com",
-      "LastLoginDate": "2026-03-11T10:15:00",
-      "IsActive": true,
-      "CreatedDate": "2026-01-05T09:00:00"
-    }
-  ],
-
-  "Borrowers": [
-    {
-      "BorrowerId": 1,
-      "FirstName": "Juan",
-      "LastName": "Dela Cruz",
-      "MiddleName": "Santos",
-      "DateOfBirth": "1990-05-15T00:00:00",
-      "ContactNumber": "09123456789",
-      "Email": "juan.delacruz@email.com",
-      "Address": "123 Rizal St., Barangay San Jose, Manila",
-      "EmploymentStatus": 1,
-      "MonthlyIncome": 25000.00,
-      "EmployerName": "ABC Company Inc.",
-      "GuarantorName": "Pedro Santos",
-      "GuarantorContact": "09234567890",
-      "ReasonForLoan": "Home renovation",
-      "RiskScore": 25.5,
-      "RiskClassification": 1,
-      "RegistrationDate": "2026-01-15T10:30:00",
-      "IsActive": true
-    },
-    {
-      "BorrowerId": 2,
-      "FirstName": "Maria",
-      "LastName": "Santos",
-      "MiddleName": "Reyes",
-      "DateOfBirth": "1988-08-22T00:00:00",
-      "ContactNumber": "09234567890",
-      "Email": "maria.santos@email.com",
-      "Address": "456 Mabini St., Barangay San Antonio, Quezon City",
-      "EmploymentStatus": 1,
-      "MonthlyIncome": 35000.00,
-      "EmployerName": "XYZ Corporation",
-      "GuarantorName": "Ana Reyes",
-      "GuarantorContact": "09345678901",
-      "ReasonForLoan": "Small business capital",
-      "RiskScore": 15.2,
-      "RiskClassification": 0,
-      "RegistrationDate": "2026-01-20T14:45:00",
-      "IsActive": true
-    },
-    {
-      "BorrowerId": 3,
-      "FirstName": "Pedro",
-      "LastName": "Reyes",
-      "MiddleName": "Garcia",
-      "DateOfBirth": "1975-12-03T00:00:00",
-      "ContactNumber": "09345678901",
-      "Email": "pedro.reyes@email.com",
-      "Address": "789 Bonifacio St., Barangay San Lorenzo, Cebu",
-      "EmploymentStatus": 2,
-      "MonthlyIncome": 18000.00,
-      "EmployerName": null,
-      "GuarantorName": "Jose Garcia",
-      "GuarantorContact": "09456789012",
-      "ReasonForLoan": "Emergency medical expenses",
-      "RiskScore": 45.8,
-      "RiskClassification": 2,
-      "RegistrationDate": "2026-02-01T09:15:00",
-      "IsActive": true
-    },
-    {
-      "BorrowerId": 4,
-      "FirstName": "Ana",
-      "LastName": "Lopez",
-      "MiddleName": "Mendoza",
-      "DateOfBirth": "1995-03-18T00:00:00",
-      "ContactNumber": "09456789012",
-      "Email": "ana.lopez@email.com",
-      "Address": "321 Luna St., Barangay San Isidro, Davao",
-      "EmploymentStatus": 1,
-      "MonthlyIncome": 28000.00,
-      "EmployerName": "DEF Enterprises",
-      "GuarantorName": "Carla Mendoza",
-      "GuarantorContact": "09567890123",
-      "ReasonForLoan": "Educational expenses",
-      "RiskScore": 22.1,
-      "RiskClassification": 1,
-      "RegistrationDate": "2026-02-10T11:30:00",
-      "IsActive": true
-    },
-    {
-      "BorrowerId": 5,
-      "FirstName": "Jose",
-      "LastName": "Mercado",
-      "MiddleName": "Villanueva",
-      "DateOfBirth": "1982-07-09T00:00:00",
-      "ContactNumber": "09567890123",
-      "Email": "jose.mercado@email.com",
-      "Address": "654 Jacinto St., Barangay San Roque, Bacolod",
-      "EmploymentStatus": 3,
-      "MonthlyIncome": 15000.00,
-      "EmployerName": null,
-      "GuarantorName": "Ricardo Villanueva",
-      "GuarantorContact": "09678901234",
-      "ReasonForLoan": "Farm equipment purchase",
-      "RiskScore": 52.3,
-      "RiskClassification": 2,
-      "RegistrationDate": "2026-02-20T13:45:00",
-      "IsActive": true
-    }
-  ],
-
-  "InsurancePolicies": [
-    {
-      "InsurancePolicyId": 1,
-      "PolicyNumber": "INS-20260115-0001",
-      "BorrowerId": 1,
-      "PolicyType": "Life",
-      "CoverageAmount": 100000.00,
-      "PremiumAmount": 1200.00,
-      "StartDate": "2026-01-15T00:00:00",
-      "EndDate": "2027-01-15T00:00:00",
-      "BeneficiaryName": "Maria Dela Cruz",
-      "BeneficiaryRelation": "Spouse",
-      "Status": 2,
-      "StatusRemarks": "Active - payments up to date"
-    },
-    {
-      "InsurancePolicyId": 2,
-      "PolicyNumber": "INS-20260120-0002",
-      "BorrowerId": 2,
-      "PolicyType": "Health",
-      "CoverageAmount": 50000.00,
-      "PremiumAmount": 600.00,
-      "StartDate": "2026-01-20T00:00:00",
-      "EndDate": "2027-01-20T00:00:00",
-      "BeneficiaryName": "Maria Santos",
-      "BeneficiaryRelation": "Self",
-      "Status": 3,
-      "StatusRemarks": "Fully paid"
-    },
-    {
-      "InsurancePolicyId": 3,
-      "PolicyNumber": "INS-20260201-0003",
-      "BorrowerId": 3,
-      "PolicyType": "Loan Protection",
-      "CoverageAmount": 75000.00,
-      "PremiumAmount": 900.00,
-      "StartDate": "2026-02-01T00:00:00",
-      "EndDate": "2027-02-01T00:00:00",
-      "BeneficiaryName": "Jose Reyes",
-      "BeneficiaryRelation": "Self",
-      "Status": 1,
-      "StatusRemarks": "Pending first payment"
-    }
-  ],
-
-  "Loans": [
-    {
-      "LoanId": 1,
-      "LoanNumber": "LN-20260115-001",
-      "BorrowerId": 1,
-      "PrincipalAmount": 50000.00,
-      "InterestRate": 12.00,
-      "TermInMonths": 12,
-      "ApplicationDate": "2026-01-15T10:30:00",
-      "ApprovalDate": "2026-01-16T09:00:00",
-      "DisbursementDate": "2026-01-17T14:00:00",
-      "FirstPaymentDate": "2026-02-15T00:00:00",
-      "MaturityDate": "2027-01-15T00:00:00",
-      "MonthlyPayment": 4442.44,
-      "TotalInterest": 3309.28,
-      "TotalAmountPayable": 53309.28,
-      "BalanceRemaining": 44424.40,
-      "Status": 2,
-      "Purpose": "Home renovation",
-      "InsurancePolicyId": 1,
-      "CreatedDate": "2026-01-15T10:30:00",
-      "CreatedBy": "Maria Santos"
-    },
-    {
-      "LoanId": 2,
-      "LoanNumber": "LN-20260120-002",
-      "BorrowerId": 2,
-      "PrincipalAmount": 100000.00,
-      "InterestRate": 10.00,
-      "TermInMonths": 24,
-      "ApplicationDate": "2026-01-20T14:45:00",
-      "ApprovalDate": "2026-01-21T11:30:00",
-      "DisbursementDate": "2026-01-22T10:00:00",
-      "FirstPaymentDate": "2026-02-20T00:00:00",
-      "MaturityDate": "2028-01-20T00:00:00",
-      "MonthlyPayment": 4614.49,
-      "TotalInterest": 10747.76,
-      "TotalAmountPayable": 110747.76,
-      "BalanceRemaining": 106133.27,
-      "Status": 2,
-      "Purpose": "Small business capital",
-      "InsurancePolicyId": 2,
-      "CreatedDate": "2026-01-20T14:45:00",
-      "CreatedBy": "Maria Santos"
-    },
-    {
-      "LoanId": 3,
-      "LoanNumber": "LN-20260201-003",
-      "BorrowerId": 3,
-      "PrincipalAmount": 25000.00,
-      "InterestRate": 15.00,
-      "TermInMonths": 6,
-      "ApplicationDate": "2026-02-01T09:15:00",
-      "ApprovalDate": "2026-02-02T10:30:00",
-      "DisbursementDate": "2026-02-03T13:00:00",
-      "FirstPaymentDate": "2026-03-01T00:00:00",
-      "MaturityDate": "2026-08-01T00:00:00",
-      "MonthlyPayment": 4362.50,
-      "TotalInterest": 1175.00,
-      "TotalAmountPayable": 26175.00,
-      "BalanceRemaining": 26175.00,
-      "Status": 1,
-      "Purpose": "Emergency medical expenses",
-      "InsurancePolicyId": 3,
-      "CreatedDate": "2026-02-01T09:15:00",
-      "CreatedBy": "Maria Santos"
-    },
-    {
-      "LoanId": 4,
-      "LoanNumber": "LN-20260210-004",
-      "BorrowerId": 4,
-      "PrincipalAmount": 35000.00,
-      "InterestRate": 10.00,
-      "TermInMonths": 12,
-      "ApplicationDate": "2026-02-10T11:30:00",
-      "ApprovalDate": "2026-02-11T14:00:00",
-      "DisbursementDate": "2026-02-12T09:30:00",
-      "FirstPaymentDate": "2026-03-10T00:00:00",
-      "MaturityDate": "2027-02-10T00:00:00",
-      "MonthlyPayment": 3078.79,
-      "TotalInterest": 1945.48,
-      "TotalAmountPayable": 36945.48,
-      "BalanceRemaining": 36945.48,
-      "Status": 1,
-      "Purpose": "Educational expenses",
-      "InsurancePolicyId": null,
-      "CreatedDate": "2026-02-10T11:30:00",
-      "CreatedBy": "Maria Santos"
-    }
-  ],
-
-  "AmortizationSchedules": [
-    {
-      "AmortizationScheduleId": 1,
-      "LoanId": 1,
-      "PaymentNumber": 1,
-      "DueDate": "2026-02-15T00:00:00",
-      "PaidDate": "2026-02-15T10:00:00",
-      "BeginningBalance": 50000.00,
-      "PaymentAmount": 4442.44,
-      "PrincipalAmount": 3942.44,
-      "InterestAmount": 500.00,
-      "EndingBalance": 46057.56,
-      "Status": 2,
-      "Remarks": "Paid on time"
-    },
-    {
-      "AmortizationScheduleId": 2,
-      "LoanId": 1,
-      "PaymentNumber": 2,
-      "DueDate": "2026-03-15T00:00:00",
-      "PaidDate": null,
-      "BeginningBalance": 46057.56,
-      "PaymentAmount": 4442.44,
-      "PrincipalAmount": 3969.87,
-      "InterestAmount": 472.57,
-      "EndingBalance": 42087.69,
-      "Status": 1,
-      "Remarks": null
-    },
-    {
-      "AmortizationScheduleId": 3,
-      "LoanId": 2,
-      "PaymentNumber": 1,
-      "DueDate": "2026-02-20T00:00:00",
-      "PaidDate": "2026-02-20T11:30:00",
-      "BeginningBalance": 100000.00,
-      "PaymentAmount": 4614.49,
-      "PrincipalAmount": 3781.16,
-      "InterestAmount": 833.33,
-      "EndingBalance": 96218.84,
-      "Status": 2,
-      "Remarks": "Paid on time"
-    },
-    {
-      "AmortizationScheduleId": 4,
-      "LoanId": 2,
-      "PaymentNumber": 2,
-      "DueDate": "2026-03-20T00:00:00",
-      "PaidDate": null,
-      "BeginningBalance": 96218.84,
-      "PaymentAmount": 4614.49,
-      "PrincipalAmount": 3812.69,
-      "InterestAmount": 801.80,
-      "EndingBalance": 92406.15,
-      "Status": 1,
-      "Remarks": null
-    }
-  ],
-
-  "Payments": [
-    {
-      "PaymentId": 1,
-      "PaymentNumber": "PAY-20260215-001",
-      "LoanId": 1,
-      "PaymentDate": "2026-02-15T10:00:00",
-      "DueDate": "2026-02-15T00:00:00",
-      "AmountDue": 4442.44,
-      "AmountPaid": 4442.44,
-      "LatePenalty": 0.00,
-      "DaysLate": 0,
-      "PrincipalPaid": 3942.44,
-      "InterestPaid": 500.00,
-      "Status": 2,
-      "PaymentMethod": "Cash",
-      "ReferenceNumber": "RCV-001",
-      "Remarks": "On-time payment",
-      "CreatedDate": "2026-02-15T10:00:00",
-      "CreatedBy": "System"
-    },
-    {
-      "PaymentId": 2,
-      "PaymentNumber": "PAY-20260220-002",
-      "LoanId": 2,
-      "PaymentDate": "2026-02-20T11:30:00",
-      "DueDate": "2026-02-20T00:00:00",
-      "AmountDue": 4614.49,
-      "AmountPaid": 4614.49,
-      "LatePenalty": 0.00,
-      "DaysLate": 0,
-      "PrincipalPaid": 3781.16,
-      "InterestPaid": 833.33,
-      "Status": 2,
-      "PaymentMethod": "Bank Transfer",
-      "ReferenceNumber": "TRF-20260220-001",
-      "Remarks": "Online payment",
-      "CreatedDate": "2026-02-20T11:30:00",
-      "CreatedBy": "System"
-    }
-  ],
-
-  "SavingsAccounts": [
-    {
-      "SavingsAccountId": 1,
-      "AccountNumber": "SAV-20260115-001",
-      "BorrowerId": 1,
-      "CurrentBalance": 5000.00,
-      "InterestRate": 0.25,
-      "OpenedDate": "2026-01-15T10:30:00",
-      "LastTransactionDate": "2026-03-01T14:00:00",
-      "IsActive": true
-    },
-    {
-      "SavingsAccountId": 2,
-      "AccountNumber": "SAV-20260120-002",
-      "BorrowerId": 2,
-      "CurrentBalance": 10000.00,
-      "InterestRate": 0.25,
-      "OpenedDate": "2026-01-20T14:45:00",
-      "LastTransactionDate": "2026-02-28T09:30:00",
-      "IsActive": true
-    },
-    {
-      "SavingsAccountId": 3,
-      "AccountNumber": "SAV-20260201-003",
-      "BorrowerId": 3,
-      "CurrentBalance": 2000.00,
-      "InterestRate": 0.25,
-      "OpenedDate": "2026-02-01T09:15:00",
-      "LastTransactionDate": "2026-02-01T09:15:00",
-      "IsActive": true
-    }
-  ],
-
-  "SavingsTransactions": [
-    {
-      "SavingsTransactionId": 1,
-      "SavingsAccountId": 1,
-      "TransactionDate": "2026-01-15T10:30:00",
-      "TransactionType": "Deposit",
-      "Amount": 5000.00,
-      "BalanceBefore": 0.00,
-      "BalanceAfter": 5000.00,
-      "Description": "Initial deposit",
-      "ReferenceNumber": "DEP-001",
-      "ProcessedBy": "System"
-    },
-    {
-      "SavingsTransactionId": 2,
-      "SavingsAccountId": 2,
-      "TransactionDate": "2026-01-20T14:45:00",
-      "TransactionType": "Deposit",
-      "Amount": 10000.00,
-      "BalanceBefore": 0.00,
-      "BalanceAfter": 10000.00,
-      "Description": "Initial deposit",
-      "ReferenceNumber": "DEP-002",
-      "ProcessedBy": "System"
-    },
-    {
-      "SavingsTransactionId": 3,
-      "SavingsAccountId": 3,
-      "TransactionDate": "2026-02-01T09:15:00",
-      "TransactionType": "Deposit",
-      "Amount": 2000.00,
-      "BalanceBefore": 0.00,
-      "BalanceAfter": 2000.00,
-      "Description": "Initial deposit",
-      "ReferenceNumber": "DEP-003",
-      "ProcessedBy": "System"
-    }
-  ],
-
-  "InsurancePayments": [
-    {
-      "InsurancePaymentId": 1,
-      "InsurancePolicyId": 1,
-      "PaymentNumber": "INSPMT-20260115-001",
-      "Amount": 100.00,
-      "DueDate": "2026-01-15T00:00:00",
-      "PaymentDate": "2026-01-15T10:30:00",
-      "PaymentStatus": "Paid",
-      "PaymentMethod": "Cash",
-      "ReferenceNumber": "INSPAY-001",
-      "Remarks": "Initial premium payment"
-    },
-    {
-      "InsurancePaymentId": 2,
-      "InsurancePolicyId": 1,
-      "PaymentNumber": "INSPMT-20260215-001",
-      "Amount": 100.00,
-      "DueDate": "2026-02-15T00:00:00",
-      "PaymentDate": "2026-02-15T10:00:00",
-      "PaymentStatus": "Paid",
-      "PaymentMethod": "Cash",
-      "ReferenceNumber": "INSPAY-002",
-      "Remarks": "Monthly premium"
-    },
-    {
-      "InsurancePaymentId": 3,
-      "InsurancePolicyId": 2,
-      "PaymentNumber": "INSPMT-20260120-002",
-      "Amount": 600.00,
-      "DueDate": "2026-01-20T00:00:00",
-      "PaymentDate": "2026-01-20T14:45:00",
-      "PaymentStatus": "Paid",
-      "PaymentMethod": "Bank Transfer",
-      "ReferenceNumber": "TRF-002",
-      "Remarks": "Full year premium"
-    }
-  ],
-
-  "InsuranceClaims": [],
-
-  "AuditLogs": [
-    {
-      "AuditLogId": 1,
-      "Timestamp": "2026-01-15T10:30:00",
-      "UserName": "Maria Santos",
-      "Action": "CREATE",
-      "EntityType": "Borrower",
-      "EntityId": 1,
-      "OldValues": null,
-      "NewValues": "{\"FirstName\":\"Juan\",\"LastName\":\"Dela Cruz\"}",
-      "Description": "Created new borrower",
-      "IpAddress": "192.168.1.100"
-    },
-    {
-      "AuditLogId": 2,
-      "Timestamp": "2026-01-15T10:31:00",
-      "UserName": "Maria Santos",
-      "Action": "CREATE",
-      "EntityType": "Loan",
-      "EntityId": 1,
-      "OldValues": null,
-      "NewValues": "{\"LoanNumber\":\"LN-20260115-001\",\"PrincipalAmount\":50000}",
-      "Description": "Created new loan",
-      "IpAddress": "192.168.1.100"
-    }
-  ]
+  "$id": "1",
+  "Users": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "UserId": 1,
+        "Username": "admin",
+        "PasswordHash": "52vbbAy3ldrMHN4hHHUyl\u002BUB17HC57HCHHQ/IdSUhF0=",
+        "Salt": "l53y1Q6qt9YLHCGJJpydnvniaUVAUnPlAbDUdWckfuw=",
+        "FullName": "System Administrator",
+        "Email": "admin@pesopinoy.com",
+        "LastLoginDate": "2026-03-13T01:49:30.6964154+08:00",
+        "IsActive": true,
+        "CreatedDate": "2026-03-12T15:13:00.7122942"
+      }
+    ]
+  },
+  "Borrowers": {
+    "$id": "4",
+    "$values": [
+      {
+        "$id": "5",
+        "BorrowerId": 1,
+        "FirstName": "Francis",
+        "LastName": "Sabiniano",
+        "MiddleName": "",
+        "DateOfBirth": "1995-06-20T15:13:12.001",
+        "ContactNumber": "09123456789",
+        "Email": "f.Sabiniano@gmail.com",
+        "Address": "2222 Dito St.",
+        "EmploymentStatus": 6,
+        "MonthlyIncome": 40000.0,
+        "EmployerName": "N/A",
+        "GuarantorName": "Me Sabiniano",
+        "GuarantorContact": "09123456789",
+        "ReasonForLoan": "Business",
+        "RiskScore": 30.0,
+        "RiskClassification": 0,
+        "RegistrationDate": "2026-03-12T15:14:52.3462022",
+        "IsActive": true,
+        "Loans": {
+          "$id": "6",
+          "$values": [
+            {
+              "$id": "7",
+              "LoanId": 1,
+              "LoanNumber": "LN-20260312-035B50E6",
+              "BorrowerId": 1,
+              "Borrower": {
+                "$ref": "5"
+              },
+              "PrincipalAmount": 15000.0,
+              "InterestRate": 5.0,
+              "TermInMonths": 3,
+              "ApplicationDate": "2026-03-12T15:38:55.932018",
+              "ApprovalDate": "2026-03-12T15:39:00.6204468",
+              "DisbursementDate": "2026-03-12T15:39:00.6208585",
+              "FirstPaymentDate": "2026-04-12T15:37:51.472809",
+              "MaturityDate": "2026-07-12T15:37:51.472809",
+              "MonthlyPayment": 5041.72,
+              "TotalInterest": 125.17,
+              "TotalAmountPayable": 15125.17,
+              "BalanceRemaining": 5125.17,
+              "Status": 2,
+              "Purpose": null,
+              "InsurancePolicyId": null,
+              "InsurancePolicy": null,
+              "CreatedDate": "2026-03-12T15:38:55.9224031",
+              "CreatedBy": null,
+              "Payments": {
+                "$id": "8",
+                "$values": [
+                  {
+                    "$id": "9",
+                    "PaymentId": 1,
+                    "PaymentNumber": "PAY-20260312-BB08A447",
+                    "LoanId": 1,
+                    "Loan": {
+                      "$ref": "7"
+                    },
+                    "PaymentDate": "2026-03-12T15:43:21.8570158",
+                    "DueDate": "2026-04-12T15:37:51.472809",
+                    "AmountDue": 5041.72,
+                    "AmountPaid": 10000.0,
+                    "LatePenalty": 0.0,
+                    "DaysLate": 0,
+                    "PrincipalPaid": 0.0,
+                    "InterestPaid": 0.0,
+                    "Status": 0,
+                    "PaymentMethod": "Cash",
+                    "ReferenceNumber": null,
+                    "Remarks": "Regular payment",
+                    "CreatedDate": "2026-03-12T15:43:42.161368",
+                    "CreatedBy": null
+                  }
+                ]
+              },
+              "AmortizationSchedules": {
+                "$id": "10",
+                "$values": [
+                  {
+                    "$id": "11",
+                    "AmortizationScheduleId": 1,
+                    "LoanId": 1,
+                    "Loan": {
+                      "$ref": "7"
+                    },
+                    "PaymentNumber": 1,
+                    "DueDate": "2026-04-12T15:37:51.472809",
+                    "PaidDate": "2026-03-12T15:43:21.8570158",
+                    "BeginningBalance": 15000.0,
+                    "PaymentAmount": 5041.72,
+                    "PrincipalAmount": 4979.22,
+                    "InterestAmount": 62.5,
+                    "EndingBalance": 10020.78,
+                    "Status": 0,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "12",
+                    "AmortizationScheduleId": 2,
+                    "LoanId": 1,
+                    "Loan": {
+                      "$ref": "7"
+                    },
+                    "PaymentNumber": 2,
+                    "DueDate": "2026-05-12T15:37:51.472809",
+                    "PaidDate": null,
+                    "BeginningBalance": 10020.78,
+                    "PaymentAmount": 5041.72,
+                    "PrincipalAmount": 4999.97,
+                    "InterestAmount": 41.75,
+                    "EndingBalance": 5020.81,
+                    "Status": 3,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "13",
+                    "AmortizationScheduleId": 3,
+                    "LoanId": 1,
+                    "Loan": {
+                      "$ref": "7"
+                    },
+                    "PaymentNumber": 3,
+                    "DueDate": "2026-06-12T15:37:51.472809",
+                    "PaidDate": null,
+                    "BeginningBalance": 5020.81,
+                    "PaymentAmount": 5041.73,
+                    "PrincipalAmount": 5020.81,
+                    "InterestAmount": 20.92,
+                    "EndingBalance": 0.0,
+                    "Status": 3,
+                    "Remarks": null
+                  }
+                ]
+              }
+            },
+            {
+              "$id": "14",
+              "LoanId": 2,
+              "LoanNumber": "LN-20260312-73960BA1",
+              "BorrowerId": 1,
+              "Borrower": {
+                "$ref": "5"
+              },
+              "PrincipalAmount": 10000.0,
+              "InterestRate": 5.0,
+              "TermInMonths": 5,
+              "ApplicationDate": "2026-03-12T15:40:04.7633558",
+              "ApprovalDate": "2026-03-13T01:50:55.4754256+08:00",
+              "DisbursementDate": "2026-03-13T01:50:55.4757553+08:00",
+              "FirstPaymentDate": "2026-04-12T15:39:46.291075",
+              "MaturityDate": "2026-09-12T15:39:46.291075",
+              "MonthlyPayment": 2025.07,
+              "TotalInterest": 125.35,
+              "TotalAmountPayable": 10125.35,
+              "BalanceRemaining": 5125.35,
+              "Status": 2,
+              "Purpose": null,
+              "InsurancePolicyId": null,
+              "InsurancePolicy": null,
+              "CreatedDate": "2026-03-12T15:40:04.7632553",
+              "CreatedBy": null,
+              "Payments": {
+                "$id": "15",
+                "$values": [
+                  {
+                    "$id": "16",
+                    "PaymentId": 3,
+                    "PaymentNumber": "PAY-20260313-7359FBF4",
+                    "LoanId": 2,
+                    "Loan": {
+                      "$ref": "14"
+                    },
+                    "PaymentDate": "2026-03-13T01:51:09.8704749+08:00",
+                    "DueDate": "2026-04-12T15:39:46.291075",
+                    "AmountDue": 2025.07,
+                    "AmountPaid": 5000,
+                    "LatePenalty": 0.00,
+                    "DaysLate": 0,
+                    "PrincipalPaid": 0,
+                    "InterestPaid": 0,
+                    "Status": 0,
+                    "PaymentMethod": "Cash",
+                    "ReferenceNumber": null,
+                    "Remarks": "Regular payment",
+                    "CreatedDate": "2026-03-13T01:51:24.8515386+08:00",
+                    "CreatedBy": null
+                  }
+                ]
+              },
+              "AmortizationSchedules": {
+                "$id": "17",
+                "$values": [
+                  {
+                    "$id": "18",
+                    "AmortizationScheduleId": 4,
+                    "LoanId": 2,
+                    "Loan": {
+                      "$ref": "14"
+                    },
+                    "PaymentNumber": 1,
+                    "DueDate": "2026-04-12T15:39:46.291075",
+                    "PaidDate": "2026-03-13T01:51:09.8704749+08:00",
+                    "BeginningBalance": 10000.0,
+                    "PaymentAmount": 2025.07,
+                    "PrincipalAmount": 1983.4,
+                    "InterestAmount": 41.67,
+                    "EndingBalance": 8016.6,
+                    "Status": 0,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "19",
+                    "AmortizationScheduleId": 5,
+                    "LoanId": 2,
+                    "Loan": {
+                      "$ref": "14"
+                    },
+                    "PaymentNumber": 2,
+                    "DueDate": "2026-05-12T15:39:46.291075",
+                    "PaidDate": null,
+                    "BeginningBalance": 8016.6,
+                    "PaymentAmount": 2025.07,
+                    "PrincipalAmount": 1991.67,
+                    "InterestAmount": 33.4,
+                    "EndingBalance": 6024.93,
+                    "Status": 3,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "20",
+                    "AmortizationScheduleId": 6,
+                    "LoanId": 2,
+                    "Loan": {
+                      "$ref": "14"
+                    },
+                    "PaymentNumber": 3,
+                    "DueDate": "2026-06-12T15:39:46.291075",
+                    "PaidDate": null,
+                    "BeginningBalance": 6024.93,
+                    "PaymentAmount": 2025.07,
+                    "PrincipalAmount": 1999.97,
+                    "InterestAmount": 25.1,
+                    "EndingBalance": 4024.96,
+                    "Status": 3,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "21",
+                    "AmortizationScheduleId": 7,
+                    "LoanId": 2,
+                    "Loan": {
+                      "$ref": "14"
+                    },
+                    "PaymentNumber": 4,
+                    "DueDate": "2026-07-12T15:39:46.291075",
+                    "PaidDate": null,
+                    "BeginningBalance": 4024.96,
+                    "PaymentAmount": 2025.07,
+                    "PrincipalAmount": 2008.3,
+                    "InterestAmount": 16.77,
+                    "EndingBalance": 2016.66,
+                    "Status": 3,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "22",
+                    "AmortizationScheduleId": 8,
+                    "LoanId": 2,
+                    "Loan": {
+                      "$ref": "14"
+                    },
+                    "PaymentNumber": 5,
+                    "DueDate": "2026-08-12T15:39:46.291075",
+                    "PaidDate": null,
+                    "BeginningBalance": 2016.66,
+                    "PaymentAmount": 2025.07,
+                    "PrincipalAmount": 2016.66,
+                    "InterestAmount": 8.4,
+                    "EndingBalance": 0.0,
+                    "Status": 3,
+                    "Remarks": null
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "SavingsAccounts": {
+          "$id": "23",
+          "$values": []
+        },
+        "InsurancePolicies": {
+          "$id": "24",
+          "$values": []
+        }
+      },
+      {
+        "$id": "25",
+        "BorrowerId": 2,
+        "FirstName": "Elle",
+        "LastName": "Dela Cruz",
+        "MiddleName": "",
+        "DateOfBirth": "2001-07-12T15:18:15.892",
+        "ContactNumber": "09946852363",
+        "Email": "E.Delacruz@gmail.com",
+        "Address": "Doon St.",
+        "EmploymentStatus": 1,
+        "MonthlyIncome": 20000.0,
+        "EmployerName": "Me",
+        "GuarantorName": "Mom Dela Cruz",
+        "GuarantorContact": "09946852363",
+        "ReasonForLoan": "Startup",
+        "RiskScore": 50.0,
+        "RiskClassification": 1,
+        "RegistrationDate": "2026-03-12T15:25:44.4435018",
+        "IsActive": true,
+        "Loans": {
+          "$id": "26",
+          "$values": [
+            {
+              "$id": "27",
+              "LoanId": 4,
+              "LoanNumber": "LN-20260312-706F17D8",
+              "BorrowerId": 2,
+              "Borrower": {
+                "$ref": "25"
+              },
+              "PrincipalAmount": 16000.0,
+              "InterestRate": 7.0,
+              "TermInMonths": 5,
+              "ApplicationDate": "2026-03-12T15:40:33.8587593",
+              "ApprovalDate": "2026-03-13T01:46:08.3722833",
+              "DisbursementDate": "2026-03-13T01:46:08.3724551",
+              "FirstPaymentDate": "2026-04-12T15:40:21.6930674",
+              "MaturityDate": "2026-09-12T15:40:21.6930674",
+              "MonthlyPayment": 3256.22,
+              "TotalInterest": 281.09,
+              "TotalAmountPayable": 16281.09,
+              "BalanceRemaining": 16281.09,
+              "Status": 2,
+              "Purpose": null,
+              "InsurancePolicyId": null,
+              "InsurancePolicy": null,
+              "CreatedDate": "2026-03-12T15:40:33.8586704",
+              "CreatedBy": null,
+              "Payments": {
+                "$id": "28",
+                "$values": []
+              },
+              "AmortizationSchedules": {
+                "$id": "29",
+                "$values": [
+                  {
+                    "$id": "30",
+                    "AmortizationScheduleId": 13,
+                    "LoanId": 4,
+                    "Loan": {
+                      "$ref": "27"
+                    },
+                    "PaymentNumber": 1,
+                    "DueDate": "2026-04-12T15:40:21.6930674",
+                    "PaidDate": null,
+                    "BeginningBalance": 16000.0,
+                    "PaymentAmount": 3256.22,
+                    "PrincipalAmount": 3162.89,
+                    "InterestAmount": 93.33,
+                    "EndingBalance": 12837.11,
+                    "Status": 3,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "31",
+                    "AmortizationScheduleId": 14,
+                    "LoanId": 4,
+                    "Loan": {
+                      "$ref": "27"
+                    },
+                    "PaymentNumber": 2,
+                    "DueDate": "2026-05-12T15:40:21.6930674",
+                    "PaidDate": null,
+                    "BeginningBalance": 12837.11,
+                    "PaymentAmount": 3256.22,
+                    "PrincipalAmount": 3181.34,
+                    "InterestAmount": 74.88,
+                    "EndingBalance": 9655.78,
+                    "Status": 3,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "32",
+                    "AmortizationScheduleId": 15,
+                    "LoanId": 4,
+                    "Loan": {
+                      "$ref": "27"
+                    },
+                    "PaymentNumber": 3,
+                    "DueDate": "2026-06-12T15:40:21.6930674",
+                    "PaidDate": null,
+                    "BeginningBalance": 9655.78,
+                    "PaymentAmount": 3256.22,
+                    "PrincipalAmount": 3199.89,
+                    "InterestAmount": 56.33,
+                    "EndingBalance": 6455.88,
+                    "Status": 3,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "33",
+                    "AmortizationScheduleId": 16,
+                    "LoanId": 4,
+                    "Loan": {
+                      "$ref": "27"
+                    },
+                    "PaymentNumber": 4,
+                    "DueDate": "2026-07-12T15:40:21.6930674",
+                    "PaidDate": null,
+                    "BeginningBalance": 6455.88,
+                    "PaymentAmount": 3256.22,
+                    "PrincipalAmount": 3218.56,
+                    "InterestAmount": 37.66,
+                    "EndingBalance": 3237.32,
+                    "Status": 3,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "34",
+                    "AmortizationScheduleId": 17,
+                    "LoanId": 4,
+                    "Loan": {
+                      "$ref": "27"
+                    },
+                    "PaymentNumber": 5,
+                    "DueDate": "2026-08-12T15:40:21.6930674",
+                    "PaidDate": null,
+                    "BeginningBalance": 3237.32,
+                    "PaymentAmount": 3256.21,
+                    "PrincipalAmount": 3237.32,
+                    "InterestAmount": 18.88,
+                    "EndingBalance": 0.0,
+                    "Status": 3,
+                    "Remarks": null
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "SavingsAccounts": {
+          "$id": "35",
+          "$values": [
+            {
+              "$id": "36",
+              "SavingsAccountId": 1,
+              "AccountNumber": "SAV-20260312-48B61B9C",
+              "BorrowerId": 2,
+              "Borrower": {
+                "$ref": "25"
+              },
+              "CurrentBalance": 3500.0,
+              "InterestRate": 0.25,
+              "OpenedDate": "2026-03-12T15:44:49.2856052",
+              "LastTransactionDate": "2026-03-12T15:44:52.5648519",
+              "IsActive": true,
+              "Transactions": {
+                "$id": "37",
+                "$values": [
+                  {
+                    "$id": "38",
+                    "SavingsTransactionId": 1,
+                    "SavingsAccountId": 1,
+                    "SavingsAccount": {
+                      "$ref": "36"
+                    },
+                    "TransactionDate": "2026-03-12T15:44:52.5637481",
+                    "TransactionType": "Deposit",
+                    "Amount": 3500.0,
+                    "BalanceBefore": 0.0,
+                    "BalanceAfter": 3500.0,
+                    "Description": "Over-the-counter deposit",
+                    "ReferenceNumber": "TRX-20260312-FD2EB815",
+                    "ProcessedBy": null
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "InsurancePolicies": {
+          "$id": "39",
+          "$values": [
+            {
+              "$id": "40",
+              "InsurancePolicyId": 2,
+              "PolicyNumber": "INS-20260312-0002",
+              "BorrowerId": 2,
+              "Borrower": {
+                "$ref": "25"
+              },
+              "PolicyType": "Health",
+              "CoverageAmount": 30000.0,
+              "PremiumAmount": 12000.0,
+              "StartDate": "2026-03-12T15:49:56.491776",
+              "EndDate": "2027-03-12T15:49:56.4920128",
+              "BeneficiaryName": "Mom dela cruz",
+              "BeneficiaryRelation": "mom",
+              "Status": 2,
+              "IsActive": true,
+              "StatusRemarks": "Policy fully paid",
+              "Claims": {
+                "$id": "41",
+                "$values": []
+              },
+              "Loans": null,
+              "Payments": {
+                "$id": "42",
+                "$values": [
+                  {
+                    "$id": "43",
+                    "InsurancePaymentId": 14,
+                    "InsurancePolicyId": 2,
+                    "InsurancePolicy": {
+                      "$ref": "40"
+                    },
+                    "PaymentNumber": "PMT-0002-01-202603",
+                    "Amount": 1000.0,
+                    "DueDate": "2026-03-12T15:49:56.491776",
+                    "PaymentDate": "2026-03-12T15:51:49.6020839",
+                    "PaymentStatus": "Paid",
+                    "PaymentMethod": "Online",
+                    "ReferenceNumber": "INS-20260312-0002 ",
+                    "Remarks": "Overpayment of $49,000.00 applied to next payment"
+                  },
+                  {
+                    "$id": "44",
+                    "InsurancePaymentId": 15,
+                    "InsurancePolicyId": 2,
+                    "InsurancePolicy": {
+                      "$ref": "40"
+                    },
+                    "PaymentNumber": "PMT-0002-02-202603",
+                    "Amount": -48000.0,
+                    "DueDate": "2026-04-12T15:49:56.491776",
+                    "PaymentDate": "2026-03-12T15:52:51.1560303",
+                    "PaymentStatus": "Paid",
+                    "PaymentMethod": "Bank Transfer",
+                    "ReferenceNumber": "INS-20260312-0002",
+                    "Remarks": "Overpayment of $53,000.00 applied to next payment"
+                  },
+                  {
+                    "$id": "45",
+                    "InsurancePaymentId": 16,
+                    "InsurancePolicyId": 2,
+                    "InsurancePolicy": {
+                      "$ref": "40"
+                    },
+                    "PaymentNumber": "PMT-0002-03-202603",
+                    "Amount": -52000.0,
+                    "DueDate": "2026-05-12T15:49:56.491776",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "46",
+                    "InsurancePaymentId": 17,
+                    "InsurancePolicyId": 2,
+                    "InsurancePolicy": {
+                      "$ref": "40"
+                    },
+                    "PaymentNumber": "PMT-0002-04-202603",
+                    "Amount": 1000.0,
+                    "DueDate": "2026-06-12T15:49:56.491776",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "47",
+                    "InsurancePaymentId": 18,
+                    "InsurancePolicyId": 2,
+                    "InsurancePolicy": {
+                      "$ref": "40"
+                    },
+                    "PaymentNumber": "PMT-0002-05-202603",
+                    "Amount": 1000.0,
+                    "DueDate": "2026-07-12T15:49:56.491776",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "48",
+                    "InsurancePaymentId": 19,
+                    "InsurancePolicyId": 2,
+                    "InsurancePolicy": {
+                      "$ref": "40"
+                    },
+                    "PaymentNumber": "PMT-0002-06-202603",
+                    "Amount": 1000.0,
+                    "DueDate": "2026-08-12T15:49:56.491776",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "49",
+                    "InsurancePaymentId": 20,
+                    "InsurancePolicyId": 2,
+                    "InsurancePolicy": {
+                      "$ref": "40"
+                    },
+                    "PaymentNumber": "PMT-0002-07-202603",
+                    "Amount": 1000.0,
+                    "DueDate": "2026-09-12T15:49:56.491776",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "50",
+                    "InsurancePaymentId": 21,
+                    "InsurancePolicyId": 2,
+                    "InsurancePolicy": {
+                      "$ref": "40"
+                    },
+                    "PaymentNumber": "PMT-0002-08-202603",
+                    "Amount": 1000.0,
+                    "DueDate": "2026-10-12T15:49:56.491776",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "51",
+                    "InsurancePaymentId": 22,
+                    "InsurancePolicyId": 2,
+                    "InsurancePolicy": {
+                      "$ref": "40"
+                    },
+                    "PaymentNumber": "PMT-0002-09-202603",
+                    "Amount": 1000.0,
+                    "DueDate": "2026-11-12T15:49:56.491776",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "52",
+                    "InsurancePaymentId": 23,
+                    "InsurancePolicyId": 2,
+                    "InsurancePolicy": {
+                      "$ref": "40"
+                    },
+                    "PaymentNumber": "PMT-0002-10-202603",
+                    "Amount": 1000.0,
+                    "DueDate": "2026-12-12T15:49:56.491776",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "53",
+                    "InsurancePaymentId": 24,
+                    "InsurancePolicyId": 2,
+                    "InsurancePolicy": {
+                      "$ref": "40"
+                    },
+                    "PaymentNumber": "PMT-0002-11-202603",
+                    "Amount": 1000.0,
+                    "DueDate": "2027-01-12T15:49:56.491776",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "54",
+                    "InsurancePaymentId": 25,
+                    "InsurancePolicyId": 2,
+                    "InsurancePolicy": {
+                      "$ref": "40"
+                    },
+                    "PaymentNumber": "PMT-0002-12-202603",
+                    "Amount": 1000.0,
+                    "DueDate": "2027-02-12T15:49:56.491776",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "55",
+                    "InsurancePaymentId": 26,
+                    "InsurancePolicyId": 2,
+                    "InsurancePolicy": {
+                      "$ref": "40"
+                    },
+                    "PaymentNumber": "PMT-0002-13-202603",
+                    "Amount": 1000.0,
+                    "DueDate": "2027-03-12T15:49:56.491776",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "$id": "56",
+        "BorrowerId": 3,
+        "FirstName": "Gabriel",
+        "LastName": "Maningo",
+        "MiddleName": "",
+        "DateOfBirth": "2009-04-21T15:25:46.42",
+        "ContactNumber": "09517795342",
+        "Email": "G.Maningo",
+        "Address": "Taguig St.",
+        "EmploymentStatus": 3,
+        "MonthlyIncome": 5000.0,
+        "EmployerName": "",
+        "GuarantorName": "",
+        "GuarantorContact": "",
+        "ReasonForLoan": "tuition",
+        "RiskScore": 75.0,
+        "RiskClassification": 2,
+        "RegistrationDate": "2026-03-12T15:27:37.815426",
+        "IsActive": true,
+        "Loans": {
+          "$id": "57",
+          "$values": [
+            {
+              "$id": "58",
+              "LoanId": 5,
+              "LoanNumber": "LN-20260312-62FB6A53",
+              "BorrowerId": 3,
+              "Borrower": {
+                "$ref": "56"
+              },
+              "PrincipalAmount": 5000.0,
+              "InterestRate": 15.0,
+              "TermInMonths": 4,
+              "ApplicationDate": "2026-03-12T15:40:46.6173627",
+              "ApprovalDate": "2026-03-12T15:43:57.3575806",
+              "DisbursementDate": "2026-03-12T15:43:57.3575828",
+              "FirstPaymentDate": "2026-04-12T15:40:34.8031549",
+              "MaturityDate": "2026-08-12T15:40:34.8031549",
+              "MonthlyPayment": 1289.31,
+              "TotalInterest": 157.22,
+              "TotalAmountPayable": 5157.22,
+              "BalanceRemaining": 4157.22,
+              "Status": 2,
+              "Purpose": null,
+              "InsurancePolicyId": null,
+              "InsurancePolicy": null,
+              "CreatedDate": "2026-03-12T15:40:46.6171959",
+              "CreatedBy": null,
+              "Payments": {
+                "$id": "59",
+                "$values": [
+                  {
+                    "$id": "60",
+                    "PaymentId": 2,
+                    "PaymentNumber": "PAY-20260312-6757005A",
+                    "LoanId": 5,
+                    "Loan": {
+                      "$ref": "58"
+                    },
+                    "PaymentDate": "2026-03-12T15:44:03.5261785",
+                    "DueDate": "2026-04-12T15:40:34.8031549",
+                    "AmountDue": 1289.31,
+                    "AmountPaid": 1000.0,
+                    "LatePenalty": 0.0,
+                    "DaysLate": 0,
+                    "PrincipalPaid": 0.0,
+                    "InterestPaid": 0.0,
+                    "Status": 1,
+                    "PaymentMethod": "Cash",
+                    "ReferenceNumber": null,
+                    "Remarks": "Regular payment",
+                    "CreatedDate": "2026-03-12T15:44:08.5983045",
+                    "CreatedBy": null
+                  }
+                ]
+              },
+              "AmortizationSchedules": {
+                "$id": "61",
+                "$values": [
+                  {
+                    "$id": "62",
+                    "AmortizationScheduleId": 18,
+                    "LoanId": 5,
+                    "Loan": {
+                      "$ref": "58"
+                    },
+                    "PaymentNumber": 1,
+                    "DueDate": "2026-04-12T15:40:34.8031549",
+                    "PaidDate": "2026-03-12T15:44:03.5261785",
+                    "BeginningBalance": 5000.0,
+                    "PaymentAmount": 1289.31,
+                    "PrincipalAmount": 1226.81,
+                    "InterestAmount": 62.5,
+                    "EndingBalance": 3773.19,
+                    "Status": 1,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "63",
+                    "AmortizationScheduleId": 19,
+                    "LoanId": 5,
+                    "Loan": {
+                      "$ref": "58"
+                    },
+                    "PaymentNumber": 2,
+                    "DueDate": "2026-05-12T15:40:34.8031549",
+                    "PaidDate": null,
+                    "BeginningBalance": 3773.19,
+                    "PaymentAmount": 1289.31,
+                    "PrincipalAmount": 1242.15,
+                    "InterestAmount": 47.16,
+                    "EndingBalance": 2531.04,
+                    "Status": 3,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "64",
+                    "AmortizationScheduleId": 20,
+                    "LoanId": 5,
+                    "Loan": {
+                      "$ref": "58"
+                    },
+                    "PaymentNumber": 3,
+                    "DueDate": "2026-06-12T15:40:34.8031549",
+                    "PaidDate": null,
+                    "BeginningBalance": 2531.04,
+                    "PaymentAmount": 1289.31,
+                    "PrincipalAmount": 1257.67,
+                    "InterestAmount": 31.64,
+                    "EndingBalance": 1273.37,
+                    "Status": 3,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "65",
+                    "AmortizationScheduleId": 21,
+                    "LoanId": 5,
+                    "Loan": {
+                      "$ref": "58"
+                    },
+                    "PaymentNumber": 4,
+                    "DueDate": "2026-07-12T15:40:34.8031549",
+                    "PaidDate": null,
+                    "BeginningBalance": 1273.37,
+                    "PaymentAmount": 1289.29,
+                    "PrincipalAmount": 1273.37,
+                    "InterestAmount": 15.92,
+                    "EndingBalance": 0.0,
+                    "Status": 3,
+                    "Remarks": null
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "SavingsAccounts": {
+          "$id": "66",
+          "$values": []
+        },
+        "InsurancePolicies": {
+          "$id": "67",
+          "$values": [
+            {
+              "$id": "68",
+              "InsurancePolicyId": 3,
+              "PolicyNumber": "INS-20260312-0003",
+              "BorrowerId": 3,
+              "Borrower": {
+                "$ref": "56"
+              },
+              "PolicyType": "Health",
+              "CoverageAmount": 25000.0,
+              "PremiumAmount": 13500.0,
+              "StartDate": "2026-03-12T15:50:31.0150495",
+              "EndDate": "2027-03-12T15:50:31.0152682",
+              "BeneficiaryName": "asd",
+              "BeneficiaryRelation": "asdad",
+              "Status": 1,
+              "IsActive": true,
+              "StatusRemarks": "Policy active - payments up to date",
+              "Claims": {
+                "$id": "69",
+                "$values": [
+                  {
+                    "$id": "70",
+                    "InsuranceClaimId": 2,
+                    "InsurancePolicyId": 3,
+                    "InsurancePolicy": {
+                      "$ref": "68"
+                    },
+                    "ClaimNumber": "CLM-20260312-0002",
+                    "FilingDate": "2026-03-12T15:56:56.5838631",
+                    "IncidentDate": "2026-03-12T15:55:06.976583",
+                    "ClaimAmount": 5000.0,
+                    "ClaimReason": "Bills",
+                    "Status": "Approved",
+                    "ProcessedDate": "2026-03-12T15:58:37.9845831",
+                    "ApprovedAmount": 5000.0,
+                    "Remarks": "",
+                    "SupportingDocuments": null
+                  }
+                ]
+              },
+              "Loans": null,
+              "Payments": {
+                "$id": "71",
+                "$values": [
+                  {
+                    "$id": "72",
+                    "InsurancePaymentId": 27,
+                    "InsurancePolicyId": 3,
+                    "InsurancePolicy": {
+                      "$ref": "68"
+                    },
+                    "PaymentNumber": "PMT-0003-01-202603",
+                    "Amount": 1125.0,
+                    "DueDate": "2026-03-12T15:50:31.0150495",
+                    "PaymentDate": "2026-03-12T15:53:20.5884411",
+                    "PaymentStatus": "Paid",
+                    "PaymentMethod": "Cash",
+                    "ReferenceNumber": "INS-20260312-0003",
+                    "Remarks": "Overpayment of $3,875.00 applied to next payment"
+                  },
+                  {
+                    "$id": "73",
+                    "InsurancePaymentId": 28,
+                    "InsurancePolicyId": 3,
+                    "InsurancePolicy": {
+                      "$ref": "68"
+                    },
+                    "PaymentNumber": "PMT-0003-02-202603",
+                    "Amount": -2750.0,
+                    "DueDate": "2026-04-12T15:50:31.0150495",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "74",
+                    "InsurancePaymentId": 29,
+                    "InsurancePolicyId": 3,
+                    "InsurancePolicy": {
+                      "$ref": "68"
+                    },
+                    "PaymentNumber": "PMT-0003-03-202603",
+                    "Amount": 1125.0,
+                    "DueDate": "2026-05-12T15:50:31.0150495",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "75",
+                    "InsurancePaymentId": 30,
+                    "InsurancePolicyId": 3,
+                    "InsurancePolicy": {
+                      "$ref": "68"
+                    },
+                    "PaymentNumber": "PMT-0003-04-202603",
+                    "Amount": 1125.0,
+                    "DueDate": "2026-06-12T15:50:31.0150495",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "76",
+                    "InsurancePaymentId": 31,
+                    "InsurancePolicyId": 3,
+                    "InsurancePolicy": {
+                      "$ref": "68"
+                    },
+                    "PaymentNumber": "PMT-0003-05-202603",
+                    "Amount": 1125.0,
+                    "DueDate": "2026-07-12T15:50:31.0150495",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "77",
+                    "InsurancePaymentId": 32,
+                    "InsurancePolicyId": 3,
+                    "InsurancePolicy": {
+                      "$ref": "68"
+                    },
+                    "PaymentNumber": "PMT-0003-06-202603",
+                    "Amount": 1125.0,
+                    "DueDate": "2026-08-12T15:50:31.0150495",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "78",
+                    "InsurancePaymentId": 33,
+                    "InsurancePolicyId": 3,
+                    "InsurancePolicy": {
+                      "$ref": "68"
+                    },
+                    "PaymentNumber": "PMT-0003-07-202603",
+                    "Amount": 1125.0,
+                    "DueDate": "2026-09-12T15:50:31.0150495",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "79",
+                    "InsurancePaymentId": 34,
+                    "InsurancePolicyId": 3,
+                    "InsurancePolicy": {
+                      "$ref": "68"
+                    },
+                    "PaymentNumber": "PMT-0003-08-202603",
+                    "Amount": 1125.0,
+                    "DueDate": "2026-10-12T15:50:31.0150495",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "80",
+                    "InsurancePaymentId": 35,
+                    "InsurancePolicyId": 3,
+                    "InsurancePolicy": {
+                      "$ref": "68"
+                    },
+                    "PaymentNumber": "PMT-0003-09-202603",
+                    "Amount": 1125.0,
+                    "DueDate": "2026-11-12T15:50:31.0150495",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "81",
+                    "InsurancePaymentId": 36,
+                    "InsurancePolicyId": 3,
+                    "InsurancePolicy": {
+                      "$ref": "68"
+                    },
+                    "PaymentNumber": "PMT-0003-10-202603",
+                    "Amount": 1125.0,
+                    "DueDate": "2026-12-12T15:50:31.0150495",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "82",
+                    "InsurancePaymentId": 37,
+                    "InsurancePolicyId": 3,
+                    "InsurancePolicy": {
+                      "$ref": "68"
+                    },
+                    "PaymentNumber": "PMT-0003-11-202603",
+                    "Amount": 1125.0,
+                    "DueDate": "2027-01-12T15:50:31.0150495",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "83",
+                    "InsurancePaymentId": 38,
+                    "InsurancePolicyId": 3,
+                    "InsurancePolicy": {
+                      "$ref": "68"
+                    },
+                    "PaymentNumber": "PMT-0003-12-202603",
+                    "Amount": 1125.0,
+                    "DueDate": "2027-02-12T15:50:31.0150495",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "84",
+                    "InsurancePaymentId": 39,
+                    "InsurancePolicyId": 3,
+                    "InsurancePolicy": {
+                      "$ref": "68"
+                    },
+                    "PaymentNumber": "PMT-0003-13-202603",
+                    "Amount": 1125.0,
+                    "DueDate": "2027-03-12T15:50:31.0150495",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "$id": "85",
+        "BorrowerId": 4,
+        "FirstName": "April",
+        "LastName": "Custorio",
+        "MiddleName": "",
+        "DateOfBirth": "2001-04-21T15:27:39.065",
+        "ContactNumber": "09946852363",
+        "Email": "A.Custorio@gmail.com",
+        "Address": "Doon St.",
+        "EmploymentStatus": 1,
+        "MonthlyIncome": 25000.0,
+        "EmployerName": "me",
+        "GuarantorName": "Mon Custorio",
+        "GuarantorContact": "09946852363",
+        "ReasonForLoan": "Business",
+        "RiskScore": 50.0,
+        "RiskClassification": 1,
+        "RegistrationDate": "2026-03-12T15:32:24.143599",
+        "IsActive": true,
+        "Loans": {
+          "$id": "86",
+          "$values": []
+        },
+        "SavingsAccounts": {
+          "$id": "87",
+          "$values": [
+            {
+              "$id": "88",
+              "SavingsAccountId": 2,
+              "AccountNumber": "SAV-20260312-E33FCF46",
+              "BorrowerId": 4,
+              "Borrower": {
+                "$ref": "85"
+              },
+              "CurrentBalance": 3000.0,
+              "InterestRate": 0.25,
+              "OpenedDate": "2026-03-12T15:45:01.2504564",
+              "LastTransactionDate": "2026-03-12T15:45:23.1751052",
+              "IsActive": true,
+              "Transactions": {
+                "$id": "89",
+                "$values": [
+                  {
+                    "$id": "90",
+                    "SavingsTransactionId": 2,
+                    "SavingsAccountId": 2,
+                    "SavingsAccount": {
+                      "$ref": "88"
+                    },
+                    "TransactionDate": "2026-03-12T15:45:23.1750826",
+                    "TransactionType": "Deposit",
+                    "Amount": 3000.0,
+                    "BalanceBefore": 0.0,
+                    "BalanceAfter": 3000.0,
+                    "Description": "Over-the-counter deposit",
+                    "ReferenceNumber": "TRX-20260312-0A34901E",
+                    "ProcessedBy": null
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "InsurancePolicies": {
+          "$id": "91",
+          "$values": [
+            {
+              "$id": "92",
+              "InsurancePolicyId": 1,
+              "PolicyNumber": "INS-20260312-0001",
+              "BorrowerId": 4,
+              "Borrower": {
+                "$ref": "85"
+              },
+              "PolicyType": "Education",
+              "CoverageAmount": 20000.0,
+              "PremiumAmount": 5000.0,
+              "StartDate": "2026-03-12T15:47:37.7800276",
+              "EndDate": "2027-03-12T15:47:37.7802666",
+              "BeneficiaryName": "Mom Custorio",
+              "BeneficiaryRelation": "Mom",
+              "Status": 2,
+              "IsActive": true,
+              "StatusRemarks": "Policy fully paid",
+              "Claims": {
+                "$id": "93",
+                "$values": [
+                  {
+                    "$id": "94",
+                    "InsuranceClaimId": 1,
+                    "InsurancePolicyId": 1,
+                    "InsurancePolicy": {
+                      "$ref": "92"
+                    },
+                    "ClaimNumber": "CLM-20260312-0001",
+                    "FilingDate": "2026-03-12T15:54:20.9537361",
+                    "IncidentDate": "2026-03-12T15:53:55.792761",
+                    "ClaimAmount": 10000.0,
+                    "ClaimReason": "Accident",
+                    "Status": "Pending",
+                    "ProcessedDate": null,
+                    "ApprovedAmount": null,
+                    "Remarks": null,
+                    "SupportingDocuments": null
+                  }
+                ]
+              },
+              "Loans": null,
+              "Payments": {
+                "$id": "95",
+                "$values": [
+                  {
+                    "$id": "96",
+                    "InsurancePaymentId": 1,
+                    "InsurancePolicyId": 1,
+                    "InsurancePolicy": {
+                      "$ref": "92"
+                    },
+                    "PaymentNumber": "PMT-0001-01-202603",
+                    "Amount": 416.66666666666666666666666667,
+                    "DueDate": "2026-03-12T15:47:37.7800276",
+                    "PaymentDate": "2026-03-12T15:50:57.1515668",
+                    "PaymentStatus": "Paid",
+                    "PaymentMethod": "Cash",
+                    "ReferenceNumber": "INS-20260312-0001",
+                    "Remarks": "Overpayment of $0.33 applied to next payment"
+                  },
+                  {
+                    "$id": "97",
+                    "InsurancePaymentId": 2,
+                    "InsurancePolicyId": 1,
+                    "InsurancePolicy": {
+                      "$ref": "92"
+                    },
+                    "PaymentNumber": "PMT-0001-02-202603",
+                    "Amount": 416.33333333333333333333333334,
+                    "DueDate": "2026-04-12T15:47:37.7800276",
+                    "PaymentDate": "2026-03-12T15:51:14.2497495",
+                    "PaymentStatus": "Paid",
+                    "PaymentMethod": "Bank Transfer",
+                    "ReferenceNumber": "INS-20260312-0001",
+                    "Remarks": "Overpayment of $4,583.34 applied to next payment"
+                  },
+                  {
+                    "$id": "98",
+                    "InsurancePaymentId": 3,
+                    "InsurancePolicyId": 1,
+                    "InsurancePolicy": {
+                      "$ref": "92"
+                    },
+                    "PaymentNumber": "PMT-0001-03-202603",
+                    "Amount": -4166.67,
+                    "DueDate": "2026-05-12T15:47:37.7800276",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "99",
+                    "InsurancePaymentId": 4,
+                    "InsurancePolicyId": 1,
+                    "InsurancePolicy": {
+                      "$ref": "92"
+                    },
+                    "PaymentNumber": "PMT-0001-04-202603",
+                    "Amount": 416.66666666666666666666666667,
+                    "DueDate": "2026-06-12T15:47:37.7800276",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "100",
+                    "InsurancePaymentId": 5,
+                    "InsurancePolicyId": 1,
+                    "InsurancePolicy": {
+                      "$ref": "92"
+                    },
+                    "PaymentNumber": "PMT-0001-05-202603",
+                    "Amount": 416.66666666666666666666666667,
+                    "DueDate": "2026-07-12T15:47:37.7800276",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "101",
+                    "InsurancePaymentId": 6,
+                    "InsurancePolicyId": 1,
+                    "InsurancePolicy": {
+                      "$ref": "92"
+                    },
+                    "PaymentNumber": "PMT-0001-06-202603",
+                    "Amount": 416.66666666666666666666666667,
+                    "DueDate": "2026-08-12T15:47:37.7800276",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "102",
+                    "InsurancePaymentId": 7,
+                    "InsurancePolicyId": 1,
+                    "InsurancePolicy": {
+                      "$ref": "92"
+                    },
+                    "PaymentNumber": "PMT-0001-07-202603",
+                    "Amount": 416.66666666666666666666666667,
+                    "DueDate": "2026-09-12T15:47:37.7800276",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "103",
+                    "InsurancePaymentId": 8,
+                    "InsurancePolicyId": 1,
+                    "InsurancePolicy": {
+                      "$ref": "92"
+                    },
+                    "PaymentNumber": "PMT-0001-08-202603",
+                    "Amount": 416.66666666666666666666666667,
+                    "DueDate": "2026-10-12T15:47:37.7800276",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "104",
+                    "InsurancePaymentId": 9,
+                    "InsurancePolicyId": 1,
+                    "InsurancePolicy": {
+                      "$ref": "92"
+                    },
+                    "PaymentNumber": "PMT-0001-09-202603",
+                    "Amount": 416.66666666666666666666666667,
+                    "DueDate": "2026-11-12T15:47:37.7800276",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "105",
+                    "InsurancePaymentId": 10,
+                    "InsurancePolicyId": 1,
+                    "InsurancePolicy": {
+                      "$ref": "92"
+                    },
+                    "PaymentNumber": "PMT-0001-10-202603",
+                    "Amount": 416.66666666666666666666666667,
+                    "DueDate": "2026-12-12T15:47:37.7800276",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "106",
+                    "InsurancePaymentId": 11,
+                    "InsurancePolicyId": 1,
+                    "InsurancePolicy": {
+                      "$ref": "92"
+                    },
+                    "PaymentNumber": "PMT-0001-11-202603",
+                    "Amount": 416.66666666666666666666666667,
+                    "DueDate": "2027-01-12T15:47:37.7800276",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "107",
+                    "InsurancePaymentId": 12,
+                    "InsurancePolicyId": 1,
+                    "InsurancePolicy": {
+                      "$ref": "92"
+                    },
+                    "PaymentNumber": "PMT-0001-12-202603",
+                    "Amount": 416.66666666666666666666666667,
+                    "DueDate": "2027-02-12T15:47:37.7800276",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "108",
+                    "InsurancePaymentId": 13,
+                    "InsurancePolicyId": 1,
+                    "InsurancePolicy": {
+                      "$ref": "92"
+                    },
+                    "PaymentNumber": "PMT-0001-13-202603",
+                    "Amount": 416.66666666666666666666666667,
+                    "DueDate": "2027-03-12T15:47:37.7800276",
+                    "PaymentDate": null,
+                    "PaymentStatus": "Pending",
+                    "PaymentMethod": "Not Paid",
+                    "ReferenceNumber": null,
+                    "Remarks": null
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "$id": "109",
+        "BorrowerId": 5,
+        "FirstName": "Maureen",
+        "LastName": "Santos",
+        "MiddleName": "",
+        "DateOfBirth": "2000-05-17T15:33:09.136",
+        "ContactNumber": "09876212540",
+        "Email": "M.Santos@gmail.com",
+        "Address": "Basta St.",
+        "EmploymentStatus": 6,
+        "MonthlyIncome": 50000.0,
+        "EmployerName": "",
+        "GuarantorName": "",
+        "GuarantorContact": "",
+        "ReasonForLoan": "Business",
+        "RiskScore": 40.0,
+        "RiskClassification": 0,
+        "RegistrationDate": "2026-03-12T15:35:30.4615665",
+        "IsActive": true,
+        "Loans": {
+          "$id": "110",
+          "$values": [
+            {
+              "$id": "111",
+              "LoanId": 3,
+              "LoanNumber": "LN-20260312-961CE9F7",
+              "BorrowerId": 5,
+              "Borrower": {
+                "$ref": "109"
+              },
+              "PrincipalAmount": 12000.0,
+              "InterestRate": 7.0,
+              "TermInMonths": 4,
+              "ApplicationDate": "2026-03-12T15:40:20.7512617",
+              "ApprovalDate": "2026-03-13T01:46:21.6394678",
+              "DisbursementDate": "2026-03-13T01:46:21.6394688",
+              "FirstPaymentDate": "2026-04-12T15:40:05.837361",
+              "MaturityDate": "2026-08-12T15:40:05.837361",
+              "MonthlyPayment": 3043.88,
+              "TotalInterest": 175.51,
+              "TotalAmountPayable": 12175.51,
+              "BalanceRemaining": 12175.51,
+              "Status": 2,
+              "Purpose": null,
+              "InsurancePolicyId": null,
+              "InsurancePolicy": null,
+              "CreatedDate": "2026-03-12T15:40:20.751147",
+              "CreatedBy": null,
+              "Payments": {
+                "$id": "112",
+                "$values": []
+              },
+              "AmortizationSchedules": {
+                "$id": "113",
+                "$values": [
+                  {
+                    "$id": "114",
+                    "AmortizationScheduleId": 9,
+                    "LoanId": 3,
+                    "Loan": {
+                      "$ref": "111"
+                    },
+                    "PaymentNumber": 1,
+                    "DueDate": "2026-04-12T15:40:05.837361",
+                    "PaidDate": null,
+                    "BeginningBalance": 12000.0,
+                    "PaymentAmount": 3043.88,
+                    "PrincipalAmount": 2973.88,
+                    "InterestAmount": 70.0,
+                    "EndingBalance": 9026.12,
+                    "Status": 3,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "115",
+                    "AmortizationScheduleId": 10,
+                    "LoanId": 3,
+                    "Loan": {
+                      "$ref": "111"
+                    },
+                    "PaymentNumber": 2,
+                    "DueDate": "2026-05-12T15:40:05.837361",
+                    "PaidDate": null,
+                    "BeginningBalance": 9026.12,
+                    "PaymentAmount": 3043.88,
+                    "PrincipalAmount": 2991.23,
+                    "InterestAmount": 52.65,
+                    "EndingBalance": 6034.89,
+                    "Status": 3,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "116",
+                    "AmortizationScheduleId": 11,
+                    "LoanId": 3,
+                    "Loan": {
+                      "$ref": "111"
+                    },
+                    "PaymentNumber": 3,
+                    "DueDate": "2026-06-12T15:40:05.837361",
+                    "PaidDate": null,
+                    "BeginningBalance": 6034.89,
+                    "PaymentAmount": 3043.88,
+                    "PrincipalAmount": 3008.68,
+                    "InterestAmount": 35.2,
+                    "EndingBalance": 3026.22,
+                    "Status": 3,
+                    "Remarks": null
+                  },
+                  {
+                    "$id": "117",
+                    "AmortizationScheduleId": 12,
+                    "LoanId": 3,
+                    "Loan": {
+                      "$ref": "111"
+                    },
+                    "PaymentNumber": 4,
+                    "DueDate": "2026-07-12T15:40:05.837361",
+                    "PaidDate": null,
+                    "BeginningBalance": 3026.22,
+                    "PaymentAmount": 3043.87,
+                    "PrincipalAmount": 3026.22,
+                    "InterestAmount": 17.65,
+                    "EndingBalance": 0.0,
+                    "Status": 3,
+                    "Remarks": null
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "SavingsAccounts": {
+          "$id": "118",
+          "$values": []
+        },
+        "InsurancePolicies": {
+          "$id": "119",
+          "$values": []
+        }
+      }
+    ]
+  },
+  "Loans": {
+    "$id": "120",
+    "$values": [
+      {
+        "$ref": "7"
+      },
+      {
+        "$ref": "14"
+      },
+      {
+        "$ref": "111"
+      },
+      {
+        "$ref": "27"
+      },
+      {
+        "$ref": "58"
+      }
+    ]
+  },
+  "Payments": {
+    "$id": "121",
+    "$values": [
+      {
+        "$ref": "9"
+      },
+      {
+        "$ref": "60"
+      },
+      {
+        "$ref": "16"
+      }
+    ]
+  },
+  "AmortizationSchedules": {
+    "$id": "122",
+    "$values": [
+      {
+        "$ref": "11"
+      },
+      {
+        "$ref": "12"
+      },
+      {
+        "$ref": "13"
+      },
+      {
+        "$ref": "18"
+      },
+      {
+        "$ref": "19"
+      },
+      {
+        "$ref": "20"
+      },
+      {
+        "$ref": "21"
+      },
+      {
+        "$ref": "22"
+      },
+      {
+        "$ref": "114"
+      },
+      {
+        "$ref": "115"
+      },
+      {
+        "$ref": "116"
+      },
+      {
+        "$ref": "117"
+      },
+      {
+        "$ref": "30"
+      },
+      {
+        "$ref": "31"
+      },
+      {
+        "$ref": "32"
+      },
+      {
+        "$ref": "33"
+      },
+      {
+        "$ref": "34"
+      },
+      {
+        "$ref": "62"
+      },
+      {
+        "$ref": "63"
+      },
+      {
+        "$ref": "64"
+      },
+      {
+        "$ref": "65"
+      }
+    ]
+  },
+  "SavingsAccounts": {
+    "$id": "123",
+    "$values": [
+      {
+        "$ref": "36"
+      },
+      {
+        "$ref": "88"
+      }
+    ]
+  },
+  "SavingsTransactions": {
+    "$id": "124",
+    "$values": [
+      {
+        "$ref": "38"
+      },
+      {
+        "$ref": "90"
+      }
+    ]
+  },
+  "InsurancePolicies": {
+    "$id": "125",
+    "$values": [
+      {
+        "$ref": "92"
+      },
+      {
+        "$ref": "40"
+      },
+      {
+        "$ref": "68"
+      }
+    ]
+  },
+  "InsuranceClaims": {
+    "$id": "126",
+    "$values": [
+      {
+        "$ref": "94"
+      },
+      {
+        "$ref": "70"
+      }
+    ]
+  },
+  "InsurancePayments": {
+    "$id": "127",
+    "$values": [
+      {
+        "$ref": "96"
+      },
+      {
+        "$ref": "97"
+      },
+      {
+        "$ref": "98"
+      },
+      {
+        "$ref": "99"
+      },
+      {
+        "$ref": "100"
+      },
+      {
+        "$ref": "101"
+      },
+      {
+        "$ref": "102"
+      },
+      {
+        "$ref": "103"
+      },
+      {
+        "$ref": "104"
+      },
+      {
+        "$ref": "105"
+      },
+      {
+        "$ref": "106"
+      },
+      {
+        "$ref": "107"
+      },
+      {
+        "$ref": "108"
+      },
+      {
+        "$ref": "43"
+      },
+      {
+        "$ref": "44"
+      },
+      {
+        "$ref": "45"
+      },
+      {
+        "$ref": "46"
+      },
+      {
+        "$ref": "47"
+      },
+      {
+        "$ref": "48"
+      },
+      {
+        "$ref": "49"
+      },
+      {
+        "$ref": "50"
+      },
+      {
+        "$ref": "51"
+      },
+      {
+        "$ref": "52"
+      },
+      {
+        "$ref": "53"
+      },
+      {
+        "$ref": "54"
+      },
+      {
+        "$ref": "55"
+      },
+      {
+        "$ref": "72"
+      },
+      {
+        "$ref": "73"
+      },
+      {
+        "$ref": "74"
+      },
+      {
+        "$ref": "75"
+      },
+      {
+        "$ref": "76"
+      },
+      {
+        "$ref": "77"
+      },
+      {
+        "$ref": "78"
+      },
+      {
+        "$ref": "79"
+      },
+      {
+        "$ref": "80"
+      },
+      {
+        "$ref": "81"
+      },
+      {
+        "$ref": "82"
+      },
+      {
+        "$ref": "83"
+      },
+      {
+        "$ref": "84"
+      }
+    ]
+  },
+  "AuditLogs": {
+    "$id": "128",
+    "$values": []
+  }
 }

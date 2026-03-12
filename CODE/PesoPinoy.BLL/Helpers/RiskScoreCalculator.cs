@@ -12,11 +12,11 @@ namespace PesoPinoy.BLL.Helpers
             decimal score = 0;
 
             // Factor 1: Income level (0-30 points)
-            if (borrower.MonthlyIncome >= 50000)
+            if (borrower.MonthlyIncome >= 40000)
                 score += 10;
-            else if (borrower.MonthlyIncome >= 30000)
+            else if (borrower.MonthlyIncome >= 20000)
                 score += 20;
-            else if (borrower.MonthlyIncome >= 15000)
+            else if (borrower.MonthlyIncome >= 5000)
                 score += 25;
             else
                 score += 30;
@@ -66,11 +66,11 @@ namespace PesoPinoy.BLL.Helpers
 
         public static RiskClassification ClassifyRisk(decimal riskScore)
         {
-            if (riskScore <= 30)
+            if (riskScore <= 40)
                 return RiskClassification.Low;
-            else if (riskScore <= 50)
+            else if (riskScore <= 60)
                 return RiskClassification.Medium;
-            else if (riskScore <= 70)
+            else if (riskScore <= 80)
                 return RiskClassification.High;
             else
                 return RiskClassification.VeryHigh;
