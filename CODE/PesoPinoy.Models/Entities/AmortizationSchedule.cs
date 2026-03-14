@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using PesoPinoy.Models.Enums;
+using PesoPinoy.Models.Enums;;
 
 namespace PesoPinoy.Models.Entities
 {
