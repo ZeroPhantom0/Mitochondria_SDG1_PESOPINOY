@@ -65,6 +65,6 @@ namespace PesoPinoy.BLL.Services
                            b.Loans.Any(l => l.Status == LoanStatus.Active &&
                                l.AmortizationSchedules.Any(s => s.Status == PaymentStatus.Overdue)))
                 .ToListAsync();
-        }
+        
     }
 }
