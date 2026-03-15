@@ -14,7 +14,7 @@ namespace PesoPinoy.BLL.Validators
             if (string.IsNullOrWhiteSpace(borrower.LastName))
                 return (false, "Last name is required");
 
-            if (borrower.DateOfBirth > DateTime.Now.AddYears(-18))
+            if (borrower.DateOfBirth > DateTime.Today.AddYears(-18))
                 return (false, "Borrower must be at least 18 years old");
 
             if (string.IsNullOrWhiteSpace(borrower.ContactNumber) ||
