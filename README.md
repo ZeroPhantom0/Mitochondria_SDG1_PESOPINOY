@@ -27,7 +27,7 @@ Manages database operations using Entity Framework Core with SQLite for persiste
 
 ## Clone the Repository
 ```bash
-git clone https://github.com/your-repo/PesoPinoy.git
+git clone https://github.com/ZeroPhantom0/Mitochondria_SDG1_PESOPINOY.git
 ```
 
 ## Open the Solution
