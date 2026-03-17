@@ -25,13 +25,13 @@ namespace PesoPinoy.UI
 
             try
             {
-                // Load configuration
+                //Load Configuraation
                 Configuration = new ConfigurationBuilder()
                     .SetBasePath(Directory.GetCurrentDirectory())
                     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                     .Build();
 
-                // Setup DI
+                // SETUP DI
                 var services = new ServiceCollection();
                 ConfigureServices(services);
                 ServiceProvider = services.BuildServiceProvider();
