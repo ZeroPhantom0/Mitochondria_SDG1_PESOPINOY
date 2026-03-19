@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 using PesoPinoy.Models.Entities;
 
-namespace PesoPinoy.BLL.Validators
+namespace PesoPinoy.BBL.Validators
 {
     public static class BorrowerValidator
     {
